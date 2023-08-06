@@ -46,9 +46,12 @@ int main(void) {
 
 	for(int i=elements;i>0;i--)
 	{
-		arr[i]=arr[i-1];
+
 		if(i==location-1)
 			arr[i]=inserted;
+		if(i<location)
+			continue;
+		arr[i]=arr[i-1];
 	}
 
 		for(int i=0;i<elements+1;i++)
