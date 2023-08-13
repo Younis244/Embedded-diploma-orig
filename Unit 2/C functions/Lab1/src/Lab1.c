@@ -11,7 +11,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//int factorial(int x);
+
+
+int factorial (int x)
+{
+	int product=1;
+	if(x>0)
+	{
+		for(int i=x;i>1;i--)
+		{
+			product*=i;
+
+		}
+		return product;
+	}
+	else if(x==0||x==1)
+	{
+		product=1;
+		return product;
+	}
+	else
+		printf("Wrong input");
+	//return product;
+}
+
 int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+
+	int y=factorial(3);
+	printf("%d",y);
+
+	//printf("Factorial(%d)= %d\r\n",3,factorial(3));
+
+
+
 	return EXIT_SUCCESS;
 }
