@@ -18,7 +18,7 @@ void Search()
 	int compare[100];
 	int arr[100];
 	int location=-1;
-	int limit=1;
+
 
 	printf("Enter size of array:");
 	fflush(stdin);fflush(stdout);
