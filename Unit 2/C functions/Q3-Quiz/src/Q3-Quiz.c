@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-int i=0;
+
 
 
 void reverse_array(int arr[],int rev[],int size)
