@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : Q7-Mid.c
+ Name        : Q5-Mid.c
  Author      : 
  Version     :
  Copyright   : Your copyright notice
@@ -11,16 +11,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sumOfHundred(int number)
+void Ones(int number)
 {
-	if(number!=0)
-		return number+sumOfHundred(number-1);
-
+	int i;
+	int j=0;
+	int k;
+	for(i=5;i>=0;i--)
+	{
+		k=number>>i;
+		if(k&1)
+			j++;
+		else
+			continue;
+	}
+	printf("%d",j);
 }
+
 int main()
 {
+	int num;
 
-	printf("%d",sumOfHundred(100));
+	printf("Enter number: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&num);
+
+	Ones(num);
+
 
 	return 0;
 }
