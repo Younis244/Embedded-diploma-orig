@@ -1,7 +1,7 @@
 /*
  ============================================================================
- Name        : Q1-Mid.c
- Author      : Younis Tamer Hosny
+ Name        : Q2-Mid.c
+ Author      : 
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -11,33 +11,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sum(int number)
+float squareRoot(int number)
 {
-	int rem;
-	static int new=0;
-	if(number!=0)
-	{
-		rem=number%10;
-		new+=rem;
-		sum(number/10);
-	}
-	else
-		return 0;
-	return new;
+	return sqrt(number);
 }
 
 int main()
 {
-	int num;
+	int num=0;
 
-	printf("Enter number to sum its digits: ");
+	printf("Enter number to get its square root: ");
 	fflush(stdin);fflush(stdout);
 	scanf("%d",&num);
 
-	printf("The sum is: %d",sum(num));
+	printf("The square root of %d is: %.3f",num,squareRoot(num));
 
 	return 0;
 }
-
-
-
