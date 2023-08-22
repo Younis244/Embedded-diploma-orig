@@ -11,7 +11,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
-	return EXIT_SUCCESS;
+int i=0;
+
+void reverse(int num)
+{
+
+	int rem;
+	//static int new=0;
+	if(num!=0)
+	{
+		rem=num%10;
+		printf("%d",rem);
+		reverse(num/10);
+		//return rem;
+	}
+
+
+}
+
+int main()
+{
+	int number;
+
+	printf("Enter number to be reversed: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&number);
+	printf("The reversed number is: ");
+	reverse(number);
+
+	return 0;
 }
