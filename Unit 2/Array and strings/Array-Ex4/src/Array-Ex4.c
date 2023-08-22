@@ -59,8 +59,32 @@ int main(void) {
 				printf("%d ",arr[i]);
 			}
 
-
-
-
 	return EXIT_SUCCESS;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

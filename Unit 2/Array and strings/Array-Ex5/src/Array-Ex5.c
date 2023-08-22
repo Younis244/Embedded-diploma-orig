@@ -27,7 +27,7 @@ int main(void) {
 		scanf("%d",&arr[i]);
 	}
 
-	printf("Enter the elements to be searched: ");
+	printf("Enter the element to be searched: ");
 	fflush(stdin);fflush(stdout);
 	scanf("%d",&search);
 
@@ -42,3 +42,14 @@ int main(void) {
 
 	return EXIT_SUCCESS;
 }
+
+
+
+
+
+
+
+
+
+
+

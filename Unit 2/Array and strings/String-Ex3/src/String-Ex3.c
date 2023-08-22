@@ -35,9 +35,20 @@ int main(void)
 			}
 	printf("Reverse string is: %s",sentence);
 
-
-
-
-
 	return EXIT_SUCCESS;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

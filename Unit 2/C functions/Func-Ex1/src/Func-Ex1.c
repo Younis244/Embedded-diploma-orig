@@ -47,7 +47,6 @@ void PrimeKnower(int start,int end)
 			}
 			x=j;
 
-
 		}
 printf("Prime numbers betn %d and %d are: ",start,end);
 		for(int k=0;k<x;k++)
@@ -68,3 +67,23 @@ int main()
 
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

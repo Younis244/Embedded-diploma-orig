@@ -34,11 +34,21 @@ int main(void) {
 			j++;
 	}
 
-
-
-
 	printf("\nFrequency of %c= %d",x,j);
-
 
 	return EXIT_SUCCESS;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
