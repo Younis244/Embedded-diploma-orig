@@ -24,7 +24,7 @@ void Ones(int number)
 		else
 			continue;
 	}
-	printf("%d",j);
+	printf("Ones: %d",j);
 }
 
 int main()
