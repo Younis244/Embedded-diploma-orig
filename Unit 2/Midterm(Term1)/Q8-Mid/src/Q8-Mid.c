@@ -13,7 +13,6 @@
 
 void reverse(int arr[],int n)
 {
-//	arr[n];
 	int rev[100];
 	int j=n-1;
 	for(int i=0;i<n;i++,j--)
