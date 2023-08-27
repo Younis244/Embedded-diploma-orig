@@ -53,8 +53,5 @@ int main()
 
 	printf("\nAfter reversing: ");
 	reverse(arr,size);
-
-
-
 	return 0;
 }

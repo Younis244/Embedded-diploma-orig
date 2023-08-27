@@ -7,6 +7,8 @@
  Description : Hello World in C, Ansi-style
  ============================================================================
  */
+#include <stdio.h>
+#include <stdlib.h>
 
 int moreOnes(int num)
 {
@@ -43,9 +45,6 @@ int moreOnes(int num)
 	return h;
 
 }
-
-#include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
