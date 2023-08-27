@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : Q6-Mid.c
- Author      : 
+ Author      : Younis Tamer Hosny
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style

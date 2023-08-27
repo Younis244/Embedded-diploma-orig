@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : Q3-Mid.c
- Author      : 
+ Author      : Younis Tamer Hosny
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -56,7 +56,7 @@ int main()
 {
 	int bedaya,nehaya;
 
-	printf("n1: ");
+	printf("Enter range to know prime numbers \nn1: ");
 	fflush(stdin);fflush(stdout);
 	scanf("%d",&bedaya);
 

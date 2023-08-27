@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : Q7-Mid.c
- Author      : 
+ Author      : Younis Tamer Hosny
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -20,7 +20,7 @@ int sumOfHundred(int number)
 int main()
 {
 
-	printf("%d",sumOfHundred(100));
+	printf("The sum of 1 to 100 is: %d",sumOfHundred(100));
 
 	return 0;
 }
