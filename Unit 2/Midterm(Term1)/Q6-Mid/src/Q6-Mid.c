@@ -10,40 +10,47 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-//int j=0;
-int k=0;
-int s=0;
-void unique(int arr[],int n)
-{
-	arr[n];
-	int special[100];
-	special[s]==arr[s]
-	if(special[s]==arr[s+1])
-		unique(arr[++s],n);
-	else
 
+
+void unique(int array[], int n){
+	int i;
+	int j;
+	int total = 1;
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			if(array[i]==array[j]&&i!=j)
+				break;
+		}
+		if(j==n)
+		{
+			printf("unique element %d: %d \n",total,array[i]);
+			total++;
+		}
+	}
 
 }
 
 int main()
 {
-	int arr[100]={1,2,2,3,3};
-	int size=5;
+	int arr[100];
+	int size;
 
+
+
+	printf("Enter size  of array: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&size);
+
+	printf("Enter elements: ");
+	fflush(stdin);fflush(stdout);
+
+	for(int i=0;i<size;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
 	unique(arr,size);
-
-	//	printf("Enter size  of array: ");
-	//	fflush(stdin);fflush(stdout);
-	//	scanf("%d",&size);
-	//
-	//	printf("Enter elements: ");
-	//	fflush(stdin);fflush(stdout);
-	//
-	//	for(int i=0;i<size;i++)
-	//	{
-	//		scanf("%d",&arr[i]);
-	//	}
-
 
 
 	return 0;
