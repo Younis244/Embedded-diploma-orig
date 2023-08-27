@@ -8,36 +8,28 @@
  ============================================================================
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-int main()
+int moreOnes(int num)
 {
-	int number;
 	int k,y;
 	int h=0;
 	int s=0;
 
-	printf("Enter number: ");
-	fflush(stdin);fflush(stdout);
-	scanf("%d",&number);
-
 	for(int i=31;i>=0;i--)
 	{
 
-		k=number>>i;
+		k=num>>i;
 		if(k&1)
 		{
 			s++;
 			for(int j=i-1;j>=0;j--)
 			{
-				y=number>>j;
+				y=num>>j;
 				if(y&1)
 					s++;
 				else
 				{
 					if(s>h)
-					h=s;
+						h=s;
 					s=0;
 					i=j;
 					break;
@@ -48,7 +40,24 @@ int main()
 			continue;
 
 	}
-	printf("Total: %d",h);
+	return h;
+
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int number;
+
+
+	printf("Enter number: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&number);
+
+	printf("More ones between zeros: %d",moreOnes(number));
+
 
 
 	return 0;

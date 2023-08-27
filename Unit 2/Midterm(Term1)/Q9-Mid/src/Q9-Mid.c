@@ -50,26 +50,5 @@ int main()
 
 	reverseWords(array,size);
 
-//	for(int i=0;i<n;i++)
-//	{
-//		if(arr[i]==' ')
-//		{
-//			for(int j=i;j<=n;j++)
-//			{
-//				printf("%c",arr[j]);
-//			}
-//				continue;
-//		}
-//	}
-//	printf(" ");
-//	for(int i=0;i<n;i++)
-//	{
-//		printf("%c",arr[i]);
-//		if(arr[i]==' ')
-//			break;
-//	}
-
-
-
 	return 0;
 }
