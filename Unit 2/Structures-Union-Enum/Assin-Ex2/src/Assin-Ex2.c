@@ -11,15 +11,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct infoDist
+struct SinfoDist
 {
 	int feet;
 	float inch;
 };
 
-struct infoDist ReadData()
+struct SinfoDist ReadData()
 {
-	struct infoDist C;
+	struct SinfoDist C;
 
 	printf("Enter feet: ");
 	fflush(stdin);fflush(stdout);
@@ -32,9 +32,9 @@ struct infoDist ReadData()
 	return C;
 }
 
-struct infoDist Add(struct infoDist A,struct infoDist B)
+struct SinfoDist Add(struct SinfoDist A,struct SinfoDist B)
 {
-	struct infoDist sum;
+	struct SinfoDist sum;
 	sum.feet=A.feet+B.feet;
 	sum.inch=A.inch+B.inch;
 	//As 12 inch=1 feet
@@ -49,7 +49,7 @@ struct infoDist Add(struct infoDist A,struct infoDist B)
 
 int main()
 {
-	struct infoDist X,Y,Z;
+	struct SinfoDist X,Y,Z;
 
 	printf("Enter information for 1st distance: \n");
 	X=ReadData();
