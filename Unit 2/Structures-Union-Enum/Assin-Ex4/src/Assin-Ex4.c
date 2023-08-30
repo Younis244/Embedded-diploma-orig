@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : Assin-Ex4.c
- Author      : 
+ Author      : Younis Tamer Hosny
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -32,18 +32,6 @@ struct Sstudents readData()
 	return X;
 }
 
-//void printData()
-//{
-//	struct Sstudents X[10];
-//	for(int i=1;i<=10;i++)
-//	{
-//		printf("Information for roll number %d\n",i);
-//		printf("Name: %s\n",X[i].name);
-//		printf("Marks: %.1f\n",X[i].marks);
-//	}
-//}
-
-
 int main()
 {
 	struct Sstudents Y[10];
@@ -54,7 +42,7 @@ int main()
 		printf("For roll number %d\n",i+1);
 		Y[i]=readData();
 	}
-	//Y[10]=readData();
+
 
 	printf("Displaying students information: \r\n");
 
@@ -64,7 +52,6 @@ int main()
 			printf("Name: %s\n",Y[i].name);
 			printf("Marks: %.1f\n",Y[i].marks);
 		}
-//	printData(Y);
 
 	return 0;
 }
