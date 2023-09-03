@@ -40,7 +40,7 @@ void display(struct Sstudents C)
 {
 	printf("name: %s\nRoll: %d\nmarks: %.2f\n",C.name,C.roll,C.marks);
 }
-//Younis Tamer
+
 
 int main()
 {
