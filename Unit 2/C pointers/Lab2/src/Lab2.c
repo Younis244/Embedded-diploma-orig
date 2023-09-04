@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : Lab1.c
+ Name        : Lab2.c
  Author      : Younis Tamer Hosny
  Version     :
  Copyright   : Your copyright notice
@@ -13,11 +13,23 @@
 
 int main()
 {
-	int x=3;
-	printf("%d\n",x);
-	int*px=&x;
-	*px=7;
-	printf("%d\n",x);
+	int x[5];
+	int sum=0;
+	int* px=x;
+
+	for(int i=0;i<sizeof(x)/sizeof(int);i++)
+		scanf("%d\n",px+i);
+
+	for(int i=0;i<sizeof(x)/sizeof(int);i++)
+			printf("%d\n",*px++);
+
+	px=x;
+
+	for(int i=0;i<sizeof(x)/sizeof(int);i++,px++)
+		sum+=*px;
+
+	printf("sum= %d\n",sum);
+
 
 	return 0;
 }
