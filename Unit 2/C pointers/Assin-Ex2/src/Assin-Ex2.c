@@ -24,16 +24,17 @@ int main()
 	}
 */
 
+	/*2nd solution*/
 	char alphabet[27];
 	char* pointer=alphabet;
 
-	for(int i=0;i<26;i++)
+	for(int i=0;i<26;i++,pointer++)
 	{
-//		*pointer=i+'A';
-		alphabet[i]=i+'A';
+		*pointer=i+'A';
+
 	}
 
-	//pointer=alphabet;
+	pointer=alphabet;
 
 	printf("The alphabet is: \r\n");
 	for(int i=0;i<26;i++,pointer++)
@@ -41,6 +42,23 @@ int main()
 		printf("%c ",*pointer);
 	}
 
+
+	/*3rd solution
+	 char alphabet[27];
+	char* pointer=alphabet;
+
+	for(int i=0;i<26;i++)
+	{
+		alphabet[i]=i+'A';
+	}
+
+
+	printf("The alphabet is: \r\n");
+	for(int i=0;i<26;i++,pointer++)
+	{
+		printf("%c ",*pointer);
+	}
+	 */
 
 
 	return 0;
