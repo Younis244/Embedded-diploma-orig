@@ -26,16 +26,17 @@ int main()
 
 	char alphabet[27];
 	char* pointer=alphabet;
-	pointer=alphabet;
-	for(int i=0;i<27;i++,pointer++)
+
+	for(int i=0;i<26;i++)
 	{
-		*pointer=i+'A';
+//		*pointer=i+'A';
+		alphabet[i]=i+'A';
 	}
 
 	//pointer=alphabet;
 
 	printf("The alphabet is: \r\n");
-	for(int i=0;i<27;i++,pointer++)
+	for(int i=0;i<26;i++,pointer++)
 	{
 		printf("%c ",*pointer);
 	}
