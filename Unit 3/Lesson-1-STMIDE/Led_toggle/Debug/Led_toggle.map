@@ -556,10 +556,10 @@ OUTPUT(Led_toggle.elf elf32-littlearm)
  .debug_line    0x0000000000000000      0x39c Src/main.o
  .debug_line    0x000000000000039c       0x84 Startup/startup_stm32f103c6tx.o
 
-.debug_str      0x0000000000000000     0x3b91
- .debug_str     0x0000000000000000     0x3b60 Src/main.o
-                                       0x3cc4 (size before relaxing)
- .debug_str     0x0000000000003b60       0x31 Startup/startup_stm32f103c6tx.o
+.debug_str      0x0000000000000000     0x3b95
+ .debug_str     0x0000000000000000     0x3b64 Src/main.o
+                                       0x3cc8 (size before relaxing)
+ .debug_str     0x0000000000003b64       0x31 Startup/startup_stm32f103c6tx.o
                                          0x87 (size before relaxing)
 
 .comment        0x0000000000000000       0x7b

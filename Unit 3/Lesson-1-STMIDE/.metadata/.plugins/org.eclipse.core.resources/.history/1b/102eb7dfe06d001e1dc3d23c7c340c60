@@ -26,8 +26,8 @@
 #define PORTA_BASE  0x40010800
 
 #define RCC_ABP2ENR *(volatile uint32_t *) (RCC_BASE + 0x18)
-#define GPIOA_CRH 	*(volatile uint32_t *) (PORTA_BASE + 0x04)
-#define GPIOA_ODR 	*(volatile uint32_t *) (PORTA_BASE + 0x0C)
+#define GPIOA_CRH *(volatile uint32_t *) (RCC_BASE + 0x04)
+#define GPIOA_ODR *(volatile uint32_t *) (RCC_BASE + 0x0C)
 
 
 int main(void)
@@ -40,9 +40,9 @@ int main(void)
 	while(1)
 	{
 		GPIOA_ODR |=1<<13; //Set bit 13
-		for(int i=0;i<50000;i++);
+		for(int i=0;i<5000;i++);
 		GPIOA_ODR &=~(1<<13); //Clear bit 13
-		for(int i=0;i<50000;i++);
+		for(int i=0;i<5000;i++);
 	}
 
 

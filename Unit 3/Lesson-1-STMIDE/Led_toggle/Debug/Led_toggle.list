@@ -39,11 +39,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  17 .debug_line   00000420  00000000  00000000  000113da  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    00003b91  00000000  00000000  000117fa  2**0
+ 18 .debug_str    00003b95  00000000  00000000  000117fa  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  0001538b  2**0
+ 19 .comment      0000007b  00000000  00000000  0001538f  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000058  00000000  00000000  00015408  2**2
+ 20 .debug_frame  00000058  00000000  00000000  0001540c  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -77,8 +77,8 @@ Disassembly of section .text:
  800016c:	08000288 	.word	0x08000288
 
 08000170 <main>:
-#define GPIOA_CRH *(volatile uint32_t *) (RCC_BASE + 0x04)
-#define GPIOA_ODR *(volatile uint32_t *) (RCC_BASE + 0x0C)
+#define GPIOA_CRH 	*(volatile uint32_t *) (PORTA_BASE + 0x04)
+#define GPIOA_ODR 	*(volatile uint32_t *) (PORTA_BASE + 0x0C)
 
 
 int main(void)
@@ -114,7 +114,7 @@ int main(void)
  800019e:	4a12      	ldr	r2, [pc, #72]	; (80001e8 <main+0x78>)
  80001a0:	f443 5300 	orr.w	r3, r3, #8192	; 0x2000
  80001a4:	6013      	str	r3, [r2, #0]
-		for(int i=0;i<5000;i++);
+		for(int i=0;i<50000;i++);
  80001a6:	2300      	movs	r3, #0
  80001a8:	607b      	str	r3, [r7, #4]
  80001aa:	e002      	b.n	80001b2 <main+0x42>
@@ -122,7 +122,7 @@ int main(void)
  80001ae:	3301      	adds	r3, #1
  80001b0:	607b      	str	r3, [r7, #4]
  80001b2:	687b      	ldr	r3, [r7, #4]
- 80001b4:	f241 3287 	movw	r2, #4999	; 0x1387
+ 80001b4:	f24c 324f 	movw	r2, #49999	; 0xc34f
  80001b8:	4293      	cmp	r3, r2
  80001ba:	ddf7      	ble.n	80001ac <main+0x3c>
 		GPIOA_ODR &=~(1<<13); //Clear bit 13
@@ -131,7 +131,7 @@ int main(void)
  80001c0:	4a09      	ldr	r2, [pc, #36]	; (80001e8 <main+0x78>)
  80001c2:	f423 5300 	bic.w	r3, r3, #8192	; 0x2000
  80001c6:	6013      	str	r3, [r2, #0]
-		for(int i=0;i<5000;i++);
+		for(int i=0;i<50000;i++);
  80001c8:	2300      	movs	r3, #0
  80001ca:	603b      	str	r3, [r7, #0]
  80001cc:	e002      	b.n	80001d4 <main+0x64>
@@ -139,14 +139,14 @@ int main(void)
  80001d0:	3301      	adds	r3, #1
  80001d2:	603b      	str	r3, [r7, #0]
  80001d4:	683b      	ldr	r3, [r7, #0]
- 80001d6:	f241 3287 	movw	r2, #4999	; 0x1387
+ 80001d6:	f24c 324f 	movw	r2, #49999	; 0xc34f
  80001da:	4293      	cmp	r3, r2
  80001dc:	ddf7      	ble.n	80001ce <main+0x5e>
 		GPIOA_ODR |=1<<13; //Set bit 13
  80001de:	e7dc      	b.n	800019a <main+0x2a>
  80001e0:	40021018 	.word	0x40021018
- 80001e4:	40021004 	.word	0x40021004
- 80001e8:	4002100c 	.word	0x4002100c
+ 80001e4:	40010804 	.word	0x40010804
+ 80001e8:	4001080c 	.word	0x4001080c
 
 080001ec <Reset_Handler>:
 
