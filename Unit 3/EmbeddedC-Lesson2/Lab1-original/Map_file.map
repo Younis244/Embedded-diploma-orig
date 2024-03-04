@@ -60,9 +60,9 @@ Linker script and memory map
  *(COMMON)
                 0x00011140                . = (. + 0x1000)
                 0x00011140                stack_top = .
+LOAD startup.o
 LOAD app.o
 LOAD uart.o
-LOAD startup.o
 OUTPUT(learn-in-depth.elf elf32-littlearm)
 
 .ARM.attributes
