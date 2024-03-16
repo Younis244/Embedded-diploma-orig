@@ -1,31 +1,32 @@
-#@copyright : Younis
-CC=arm-none-eabi-
-CFLAGS= -mcpu=cortex-m3 -mthumb -gdwarf-2 
+#@copyright : younis
+CC=arm-none-eabi
+CFLAGS= -mcpu=cortex-m3 -mthumb -gdwarf-2
 INCS=-I .
 LIBS=
-
 SRC= $(wildcard *.c)
-#OBJ= startup.o app.o uart.o
-OBJ=$(SRC:.c=.o)
-
-As= $(wildcard *.s) #assembly
-AsOBJ=$(As:.s=.o)
-Project_name=learn_in_depth_cortex_m3
-
-all: $(Project_name).bin
-	@echo "=========Build is done========"
+OBJ= $(SRC:.c=.o)
+As= $(wildcard *.s)
+AsOBJ= $(As:.s=.o)
+project_name=learn_in_depth_cortex_m3
 
 
-%.o: %.c #app w uart sawa
-		$(CC)gcc.exe -c $(CFLAGS) $(INCS) $< -o $@
+all: $(project_name).bin
+	@echo "==========Build is done=========="
 
-$(Project_name).elf: $(OBJ) $(AsOBJ)
-		$(CC)ld.exe -T linker_script.ld $(LIBS) $(OBJ) $(AsOBJ) -o $@ -Map=map_file.map
 
-$(Project_name).bin: $(Project_name).elf
-	 	$(CC)objcopy.exe -O binary $< $@
 
-clean_all:
-		rm *.o *.elf *.bin
-clean:
-		rm *.elf *.bin
+
+%.o: %.c 		#@app w uart
+	$(CC)-gcc.exe -c $(CFLAGS) $(INCS) $< -o $@
+
+$(project_name).elf: $(OBJ) $(AsOBJ)
+	$(CC)-ld.exe -T linker_script.ld $(LIBS) $(OBJ) $(AsOBJ) -o $@ -Map=Map_file.map
+
+$(project_name).bin: $(project_name).elf
+	 $(CC)-objcopy.exe -O binary $< $@
+
+clean_all: 
+	rm *.o *.elf *.bin 
+
+clean: 
+	rm *.elf *.bin

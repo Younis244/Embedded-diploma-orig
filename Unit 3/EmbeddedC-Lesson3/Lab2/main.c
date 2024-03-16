@@ -17,7 +17,7 @@ extern void NMI_Handler(void)
 {
 
 }
-extern void Bus_Fault(void)
+extern void Bus_Handler(void)
 {
 	
 }
