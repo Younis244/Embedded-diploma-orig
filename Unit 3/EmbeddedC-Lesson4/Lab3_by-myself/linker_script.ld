@@ -3,8 +3,8 @@ Eng Younis */
 
 MEMORY
 {
-	flash(RX) : ORIGIN = 0x08000000 , LENGTH = 128k
-	sram(RWX) : ORIGIN = 0x20000000 , LENGTH = 20k	
+	flash(RX) : ORIGIN = 0x00000000 , LENGTH = 512M
+	sram(RWX) : ORIGIN = 0x20000000 , LENGTH = 512M	
 }
 
 SECTIONS
@@ -29,9 +29,6 @@ SECTIONS
 	_S_bss = . ;
 		*(.bss*)
 	_E_bss = . ;
-	. = ALIGN(4) ;
-	. = . + 0x1000 ;
-	_stack_top = . ;
 
 	}>sram
 }
