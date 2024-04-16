@@ -17,7 +17,7 @@
 
 //Create buffer1
 #define width1 5
-element_type UART_buffer[width1];
+//element_type UART_buffer[width1];
 
 //FIFO data types
 typedef struct

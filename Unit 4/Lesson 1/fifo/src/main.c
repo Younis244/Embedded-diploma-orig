@@ -10,7 +10,7 @@
 void main()
 {
 	FIFO_Buf_t FIFO_UART;
-	element_type i,temp;
+	element_type i,temp,UART_buffer[5];
 	if(FIFO_init(&FIFO_UART ,UART_buffer, 5) == FIFO_no_error)
 		printf("fifo init-----Done\n");
 
@@ -18,9 +18,9 @@ void main()
 	{
 		printf("FIFO Enqueue (%x) \n",i);
 		if(FIFO_enqueue(&FIFO_UART , i) == FIFO_no_error)
-			printf("\t fifo enqueue-----Done");
+			printf("\t fifo enqueue-----Done\n");
 		else
-			printf("\t fifo enqueue-----failed");
+			printf("\t fifo enqueue-----failed\n");
 	}
 
 	FIFO_print(&FIFO_UART);

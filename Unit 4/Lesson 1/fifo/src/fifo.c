@@ -56,7 +56,7 @@ FIFO_status FIFO_dequeue	(FIFO_Buf_t* fifo , element_type* item)//hena hn5leeh b
 		if(fifo->count == 0)
 			return FIFO_empty;
 
-		*item = fifo->tail;
+		*item = *(fifo->tail);//kont nasy el * ely fe tail wkanet betdini values 8alat ama aaa print el dequeue
 		fifo->count--;
 
 	//circulat fifo check
@@ -88,13 +88,13 @@ void FIFO_print				(FIFO_Buf_t* fifo)
 		else
 		{
 			temp = fifo->tail;
-			printf("\n =====fifo print=====");
+			printf("\n =====fifo print=====\n");
 			for(i=0;i<fifo->count;i++)
 			{
 				printf("\t %X \n",*temp);//ely gowa el temp
 				temp++;//increment el ptr
 			}
-			printf("================\n");
+			printf("=======================\n");
 		}
 	}
 
