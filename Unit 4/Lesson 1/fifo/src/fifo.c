@@ -79,7 +79,7 @@ FIFO_status FIFO_is_Full		(FIFO_Buf_t* fifo)
 
 void FIFO_print				(FIFO_Buf_t* fifo)
 	{
-		element_type* temp;
+		element_type* temp;//3ashan amshy byte by byte
 		int i;
 		if(fifo->count == 0)
 		{
