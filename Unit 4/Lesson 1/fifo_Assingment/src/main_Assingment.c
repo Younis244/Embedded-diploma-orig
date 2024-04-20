@@ -29,8 +29,8 @@ void main()
 		printf("\nFIFO Enqueued\n=================================\n");
 		FIFO_Print(&FIFO_Uart);
 
-		//For dequeue
 
+		//For dequeue
 		if(FIFO_Dequeue(&FIFO_Uart,&temp) == FIFO_no_error)
 			printf("fifo dequeue %x\n",temp);
 
