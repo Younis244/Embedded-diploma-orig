@@ -304,11 +304,7 @@ int main()
 		}while(atoi (selection) !=8);
 	}
 
-//void main()
-//	{
-//
-//		void options();
-//	}
+
 
 
 
