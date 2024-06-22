@@ -29,8 +29,9 @@ LIFO_Buff_Stat LIFO_init (LIFO_Buff* lifo_buffer , unsigned int* buffer , unsign
 
 LIFO_Buff_Stat LIFO_Add_item(LIFO_Buff* lifo_buffer , unsigned int item)
 	{
-		//Checking if their is base and head
-
+		//Checking if their is base and head valid
+		if(!lifo_buffer->base || !lifo_buffer->head)
+			return LIFO_NO_ERROR;
 		//Checking if lifo is full
 		if(lifo_buffer->count == lifo_buffer->length)
 			return LIFO_FULL;
@@ -45,8 +46,9 @@ LIFO_Buff_Stat LIFO_Add_item(LIFO_Buff* lifo_buffer , unsigned int item)
 
 LIFO_Buff_Stat LIFO_PoP_item (LIFO_Buff* lifo_buffer , unsigned int* item)
 	{
-		//Checking if their is base and head
-
+		//Checking if their is base and head valid
+		if(!lifo_buffer->base || !lifo_buffer->head)
+			return LIFO_NO_ERROR;
 		//Checking if lifo is empty
 		if(lifo_buffer->count == 0)
 			return LIFO_EMPTY;
