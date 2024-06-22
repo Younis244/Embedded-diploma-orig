@@ -9,39 +9,45 @@
 #include "fifo_Assingment.h"
 #include "stdio.h"
 
+TYPE buffer[width];
+
 void main()
 	{
-		TYPE i,temp,Uart_buffer[5];
-		FIFO_Buf_t FIFO_Uart;
-		if(FIFO_init(&FIFO_Uart , Uart_buffer , 5) == FIFO_no_error)
-			printf("FIFO init is done\n\n");
-			printf("=================================\n");
-
-		//For enqueue
-		for(i=0;i<8;i++)
-		{
-			printf("FIFO Enqueue (%x) \n",i);
-			if(FIFO_Enqueue(&FIFO_Uart,i) == FIFO_no_error)
-				printf("\t fifo enqueue done----\n");
-			else
-				printf("\t fifo enqueue failed----\n");
-		}
-		printf("\nFIFO Enqueued\n=================================\n");
-		FIFO_Print(&FIFO_Uart);
+		TYPE i,temp ;
+		FIFO_Buffer fifo;
 
 
-		//For dequeue
-		if(FIFO_Dequeue(&FIFO_Uart,&temp) == FIFO_no_error)
-			printf("fifo dequeue %x\n",temp);
+		if(FIFO_init(&fifo , &buffer , width) == FIFO_NO_ERROR)
+			printf("=============Fifo init is done=============\n");
 
-		if(FIFO_Dequeue(&FIFO_Uart,&temp) == FIFO_no_error)
-			printf("fifo dequeue %x\n",temp);
+		for(i = 0; i<7; i++)
+			{
+				printf("\nFifo enqueue (%d)\n" , i);
+				if(FIFO_enqueue(&fifo , i) == FIFO_NO_ERROR)
+					printf("=============Fifo is done=============\n") ;
+				else
+					printf("=============Fifo is failed=============\n") ;
+			}
 
-		printf("=================================\n");
+//		for(i = 0 ; i<width ; i++)
+//			{
+//				TYPE* temp;
+//				temp = fifo->tail;
+//				printf("%d\n" , temp);
+//			}
+//Its better to do a Fn to print FIFO as to pass the add of the buffer
+		print_Fifo_data(&fifo);
 
-		printf("The rest of data enqueued\n");
-		//The rest of data enqueued (2,3,4)
-		FIFO_Print(&FIFO_Uart);
+		if(FIFO_dequeue(&fifo , &temp) == FIFO_NO_ERROR)
+			printf("Fifo dequeue(%d)\n" , temp);
+		if(FIFO_dequeue(&fifo , &temp) == FIFO_NO_ERROR)
+			printf("Fifo dequeue(%d)\n" , temp);
+		if(FIFO_dequeue(&fifo , &temp) == FIFO_NO_ERROR)
+			printf("Fifo dequeue(%d)\n" , temp);
 
+		print_Fifo_data(&fifo);
 
+//		FIFO_enqueue(&fifo , 5);
+//
+//		print_Fifo_data(&fifo);
 	}

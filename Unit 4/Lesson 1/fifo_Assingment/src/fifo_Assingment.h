@@ -13,33 +13,30 @@
 #define TYPE uint8_t //A byte each (8bits=1byte)
 #define width 5
 
-//TYPE Uart_buffer[width];
-
-
-//Defining what i need in my structure
 typedef struct
 	{
-		unsigned int length;//Kont 3amelha TYPE bas la el sa7 yb2a 4 bytes 3ady talama arkam msh ptrs
-		unsigned int count;
 		TYPE* base;
 		TYPE* head;
 		TYPE* tail;
-	}FIFO_Buf_t;
+		unsigned int length;
+		unsigned int count;
+	}FIFO_Buffer;
 
 typedef enum
 	{
-		FIFO_no_error,
-		FIFO_is_empty,
-		FIFO_is_full,
-		FIFO_null
-	}FIFO_Status;
+		FIFO_NO_ERROR,
+		FIFO_FULL,
+		FIFO_EMPTY,
+		FIFO_NULL
+	}FIFO_Stat;
 
+FIFO_Stat FIFO_init 	(FIFO_Buffer* fifo , TYPE* buffer , unsigned int length);
+FIFO_Stat FIFO_enqueue 	(FIFO_Buffer* fifo , TYPE item);
+FIFO_Stat FIFO_dequeue 	(FIFO_Buffer* fifo , TYPE* item);
+FIFO_Stat IS_IT_FULL	(FIFO_Buffer* fifo);
+FIFO_Stat IS_IT_EMPTY	(FIFO_Buffer* fifo);
+void print_Fifo_data	(FIFO_Buffer* fifo);
 
-FIFO_Status FIFO_init				(FIFO_Buf_t* fifo , unsigned int* buff , unsigned int length);//aw bdll el unsigned int ma3 length yb2a uint32_t
-FIFO_Status FIFO_Enqueue			(FIFO_Buf_t* fifo , unsigned int data);
-FIFO_Status FIFO_Dequeue			(FIFO_Buf_t* fifo , unsigned int* data);
-FIFO_Status FIFO_IS_FULL			(FIFO_Buf_t* fifo);
-void		FIFO_Print				(FIFO_Buf_t* fifo);
 
 
 #endif /* FIFO_ASSINGMENT_H_ */
