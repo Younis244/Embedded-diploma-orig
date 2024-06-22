@@ -11,30 +11,57 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Sperson
-{
-	char name [50];
-	int id;
-};
+//struct Sperson
+//{
+//	char name [50];
+//	int id;
+//};
+//
+//int main()
+//{
+//	struct Sperson Clients[]=
+//	{
+//			{"Younis Tamer",1000},
+//			{"Mohamed morsy",1001},
+//			{"Marwan el masry",1002}
+//	};
+//
+//	struct Sperson* ptr=&Clients;
+//
+//	printf("Clients data: \r\n");
+//	for(int i=0;i<sizeof(Clients)/sizeof(struct Sperson);i++,ptr++)
+//	{
+//		printf("Name: %s\nID: %d\r\n",ptr->name,ptr->id);
+//	}
 
-int main()
-{
-	struct Sperson Clients[]=
-	{
-			{"Younis Tamer",1000},
-			{"Mohamed morsy",1001},
-			{"Marwan el masry",1002}
-	};
+int count_digits(int number) {
+  int count = 0;
 
-	struct Sperson* ptr=&Clients;
+  // Handle negative numbers (optional)
+  if (number < 0) {
+    number = -number; // Convert to positive for counting
+  }
 
-	printf("Clients data: \r\n");
-	for(int i=0;i<sizeof(Clients)/sizeof(struct Sperson);i++,ptr++)
-	{
-		printf("Name: %s\nID: %d\r\n",ptr->name,ptr->id);
-	}
+  // Loop until the number becomes 0
+  while (number != 0) {
+    number /= 10;  // Remove the last digit
+    count++;       // Increment the count for each digit removed
+  }
 
-
-
-	return 0;
+  return count;
 }
+
+int main() {
+  int num;
+
+  printf("Enter an integer: ");
+  scanf("%d", &num);
+
+  int digit_count = count_digits(num);
+
+  printf("The number of digits in %d is %d\n", num, digit_count);
+
+  return 0;
+}
+
+

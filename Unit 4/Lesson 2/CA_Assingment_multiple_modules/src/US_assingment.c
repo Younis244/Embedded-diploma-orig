@@ -26,7 +26,7 @@ State_Define(US_busy)
 		//Random val
 		US_distance = US_get_dist_random(45 , 55 , 1);
 		printf("The system is in busy state:  distance=%d \n",US_distance);
-		US_set_distance(US_distance);
+		US_set_distance (US_distance);
 		US_STATE = STATE(US_busy);
 
 
@@ -36,14 +36,14 @@ State_Define(US_busy)
 
 int US_get_dist_random(int min , int max , int count)
 	{
-	//This will generate random no. in range of l and r
-				int i;
-				int rand_num;
-				for(i=0 ; i<count ; i++)
-					{
-						rand_num = (rand() % (max-min+1)) +min;
-					}
-				return rand_num;
+		//This will generate random no. in range of l and r
+			int i;
+			int rand_num;
+			for(i=0 ; i<count ; i++)
+				{
+					rand_num = (rand() % (max-min+1)) +min;
+				}
+			return rand_num;
 	}
 
 

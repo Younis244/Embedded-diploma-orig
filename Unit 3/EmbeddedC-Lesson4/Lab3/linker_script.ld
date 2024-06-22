@@ -13,7 +13,7 @@ SECTIONS
 		*(.vectors*)
 		*(.text*)
 		*(.rodata)
-		_E_text = . ; /*De 3ashan an2el el data w el text 				w keda mn rom le ram*/
+		_E_text = . ; /*De 3ashan an2el el data w el text 	w keda mn rom le ram*/
 	}>flash
 
 	.data : {

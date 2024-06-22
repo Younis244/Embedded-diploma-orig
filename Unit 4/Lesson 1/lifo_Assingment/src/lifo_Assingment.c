@@ -12,65 +12,49 @@
 #include <stdlib.h>
 #include "lifo_Assingment.h"
 
-
-
-//Initializing my structure data
-LIFO_Status LIFO_init		(LIFO_Buf_t* lifo , unsigned int* buff , unsigned int length)//hena tab3an
+LIFO_Buff_Stat LIFO_init (LIFO_Buff* lifo_buffer , unsigned int* buffer , unsigned int length)
 	{
-		//Checking if my array is null
-			if(buff == NULL)
-				return LIFO_null;
+	//Checking for the buffer if its already initialized
+		if(buffer == NULL)
+			return LIFO_NULL;
 
-			lifo->base = buff;
-			lifo->head = buff;
-			lifo->length = length;
-			lifo->count = 0;
+	//Initializing all my data needed in the structure
+		lifo_buffer->base = buffer;
+		lifo_buffer->head = buffer;
+		lifo_buffer->length = length;
+		lifo_buffer->count = 0;
 
-			return LIFO_no_error;
+		return LIFO_NO_ERROR;
 	}
 
-
-
-//Starting adding values in my structure
-LIFO_Status LIFO_Add_data	(LIFO_Buf_t* lifo , unsigned int data)
+LIFO_Buff_Stat LIFO_Add_item(LIFO_Buff* lifo_buffer , unsigned int item)
 	{
-		//Checking if lifo is valid
-			if(!lifo->base || !lifo->head)
-					return LIFO_null;
+		//Checking if their is base and head
 
 		//Checking if lifo is full
-			//if(lifo->head == lifo->base + lifo->length * 4)
-			if(lifo->count == lifo->length)
-					return LIFO_is_full;
+		if(lifo_buffer->count == lifo_buffer->length)
+			return LIFO_FULL;
 
-		//After cheching i start adding my data
-			*(lifo->head) = data;
-			lifo->head++;
-			lifo->count++;
+		//Adding item
+		*(lifo_buffer->head) = item; //Ptr byshawrrr 3ala awel 7aga fe el array
+		lifo_buffer->head++;
+		lifo_buffer->count++;
 
-			return LIFO_no_error;
+		return LIFO_NO_ERROR;
 	}
 
-
-
-//Then popping data Last in First out (Like a jar)
-LIFO_Status LIFO_POP_data	(LIFO_Buf_t* lifo , unsigned int* data)//enta btll3 el value abl ma te minus el head fa m7tag te access el array by ptr
+LIFO_Buff_Stat LIFO_PoP_item (LIFO_Buff* lifo_buffer , unsigned int* item)
 	{
-
-		//Checking if lifo is valid
-			if(!lifo->base || !lifo->head)
-					return LIFO_null;
+		//Checking if their is base and head
 
 		//Checking if lifo is empty
-			if(lifo->count == 0)
-					return LIFO_is_empty;
+		if(lifo_buffer->count == 0)
+			return LIFO_EMPTY;
 
-		//After checking then i will pop my data
-			lifo->head--; //brg3 el head le wara
-			*data=*(lifo->head);//then a5od el data ely gowa
-			lifo->count--;
+		//Popping item
+		lifo_buffer->count--;
+		lifo_buffer->head--;
+		*item = *(lifo_buffer->head); //bshawerr 3ala el item nafso w a7ott gowah el value ely el head mshawerr 3aleha
 
-
-			return LIFO_no_error;
+		return LIFO_NO_ERROR;
 	}
-

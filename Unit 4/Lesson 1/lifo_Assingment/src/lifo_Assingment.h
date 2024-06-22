@@ -8,33 +8,34 @@
 #ifndef LIFO_ASSINGMENT_H_
 #define LIFO_ASSINGMENT_H_
 
-//#define (unsigned int)  uint
-//#define (unsigned int*) ptr_uint
+#include "stdlib.h"
+#include "stdint.h"
 
 
-//defining my buffer
+//The data i need to do a LIFO structure data
 typedef struct
-{
-	unsigned int length;
-	unsigned int count;
-	unsigned int* base;
-	unsigned int* head;
-}LIFO_Buf_t;
+	{
+		unsigned int* head;
+		unsigned int* base;
+		unsigned int length;
+		unsigned int count;
+	}LIFO_Buff;
 
-//defining status conditions
+//The conditions found
 typedef enum
-{
-	LIFO_no_error,
-	LIFO_is_full,
-	LIFO_null,
-	LIFO_is_empty
-}LIFO_Status;
+	{
+		LIFO_NO_ERROR,
+		LIFO_FULL,
+		LIFO_EMPTY,
+		LIFO_NULL
+	}LIFO_Buff_Stat;
 
-//unsigned int buffer1[5];//3awz ab2a a3rf leh mt3rfsh hena??????????
 
-//Prototypes of functions needed for implementing LIFO data structure
-LIFO_Status LIFO_init		(LIFO_Buf_t* lifo , unsigned int* buff , unsigned int length);//hena type LIFO_Status 3ashan ha3od a3mll checking lel sob7
-LIFO_Status LIFO_Add_data	(LIFO_Buf_t* lifo , unsigned int data);
-LIFO_Status LIFO_POP_data	(LIFO_Buf_t* lifo , unsigned int* data);//enta btll3 el value abl ma te minus el head fa m7tag te access el array by ptr
+//Prototypes of Fn's needed for the structure
+
+LIFO_Buff_Stat LIFO_init (LIFO_Buff* lifo_buffer , unsigned int* buffer , unsigned int length);
+LIFO_Buff_Stat LIFO_Add_item(LIFO_Buff* lifo_buffer , unsigned int item);
+LIFO_Buff_Stat LIFO_PoP_item (LIFO_Buff* lifo_buffer , unsigned int* item);
+
 
 #endif /* LIFO_ASSINGMENT_H_ */

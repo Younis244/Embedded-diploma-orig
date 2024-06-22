@@ -17,7 +17,7 @@
 #define State_Define(_stateFn_) void ST_##_stateFn_()//:void Name ()
 #define STATE(_stateFn_) ST_##_stateFn_//:Name As to return to the Fn
 
-//States connection
+//States connection and defined in state.h as it's included in all files.h
 void US_set_distance (int d);
 void Dc_motor (int s);
 
