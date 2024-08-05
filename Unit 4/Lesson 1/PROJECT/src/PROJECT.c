@@ -65,7 +65,7 @@ void Add_Student()
 
 
 		DPRINTF("Student's ID: ");
-		gets (DATA);
+		gets (s);
 		pNewStudent->student_Info.ID = atoi (DATA);
 		DPRINTF("Student's name: ");
 		gets (pNewStudent->student_Info.Name);
@@ -303,24 +303,3 @@ int main()
 
 		}while(atoi (selection) !=8);
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
