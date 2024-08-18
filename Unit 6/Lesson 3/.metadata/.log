@@ -13,3 +13,63 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-08-14 17:14:33.979
 !MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-14 17:24:28.451
+!MESSAGE Indexed 'Unit6_Lesson3' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-14 17:24:34.144
+!MESSAGE Indexed 'Unit6_Lesson3' (21 sources, 78 headers) in 3.52 sec: 3,770 declarations; 13,071 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+!SESSION 2024-08-15 17:34:51.018 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-08-15 17:35:17.782
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-15 17:35:23.658
+!MESSAGE Log4j initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 3\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-15 17:35:41.322
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-08-15 17:35:41.903
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-15 17:37:49.380
+!MESSAGE Indexed 'Unit6_Lesson3_Lab1' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-15 17:37:52.587
+!MESSAGE Indexed 'Unit6_Lesson3_Lab1' (18 sources, 19 headers) in 1.05 sec: 1,011 declarations; 4,447 references; 0 unresolved inclusions; 39 syntax errors; 2,041 unresolved names (27%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-15 17:38:55.989
+!MESSAGE Indexed 'Unit6_Lesson3_Lab1' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-15 17:38:58.665
+!MESSAGE Indexed 'Unit6_Lesson3_Lab1' (3 sources, 52 headers) in 1.34 sec: 1,933 declarations; 2,743 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.043%)
+!SESSION 2024-08-18 16:24:18.587 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-08-18 16:24:24.659
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-18 16:24:30.714
+!MESSAGE Log4j initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 3\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-18 16:24:38.086
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-08-18 16:24:38.698
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-18 16:57:57.289
+!MESSAGE Indexed 'Unit6_Lesson3_Lab2' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-18 16:58:00.498
+!MESSAGE Indexed 'Unit6_Lesson3_Lab2' (3 sources, 0 headers) in 0.02 sec: 69 declarations; 45 references; 10 unresolved inclusions; 0 syntax errors; 24 unresolved names (17%)
