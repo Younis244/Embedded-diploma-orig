@@ -1,4 +1,4 @@
-17:08:37 **** Build of configuration Debug for project Unit6_Lesson3 ****
+01:46:48 **** Incremental Build of configuration Debug for project Unit6_Lesson3 ****
 make -j16 all 
 arm-none-eabi-size   Unit6_Lesson3.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   Unit6_Lesson3.elf
 Finished building: default.size.stdout
  
 
-17:08:37 Build Finished. 0 errors, 0 warnings. (took 573ms)
+01:46:48 Build Finished. 0 errors, 0 warnings. (took 224ms)
 
