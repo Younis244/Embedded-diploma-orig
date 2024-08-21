@@ -1,0 +1,231 @@
+13:56:48 **** Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Unit6_Lesson4.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 4\Unit6_Lesson4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Unit6_Lesson4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Unit6_Lesson4.elf
+ 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+arm-none-eabi-objdump -h -S  Unit6_Lesson4.elf  > "Unit6_Lesson4.list"
+arm-none-eabi-objcopy  -O binary  Unit6_Lesson4.elf  "Unit6_Lesson4.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Unit6_Lesson4.bin
+Finished building: Unit6_Lesson4.list
+ 
+ 
+13:56:50 **** Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Unit6_Lesson4_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 4\Unit6_Lesson4_Lab2\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Unit6_Lesson4_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Unit6_Lesson4_Lab2.elf
+ 
+arm-none-eabi-size   Unit6_Lesson4_Lab2.elf 
+arm-none-eabi-objdump -h -S  Unit6_Lesson4_Lab2.elf  > "Unit6_Lesson4_Lab2.list"
+arm-none-eabi-objcopy  -O binary  Unit6_Lesson4_Lab2.elf  "Unit6_Lesson4_Lab2.bin"
+   text	   data	    bss	    dec	    hex	filename
+    564	      8	   1568	   2140	    85c	Unit6_Lesson4_Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Unit6_Lesson4_Lab2.bin
+Finished building: Unit6_Lesson4_Lab2.list
+ 
+ 
+14:27:39 **** Incremental Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+14:27:39 **** Incremental Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI0_IRQHandler':
+../Src/main.c:80:14: error: expected expression before '^' token
+  GPIOA_ODR = ^(1<<13);
+              ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:28:05 **** Incremental Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+14:28:05 **** Incremental Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI0_IRQHandler':
+../Src/main.c:80:13: error: expected expression before '^' token
+  GPIOA_ODR =^(1<<13);
+             ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:28:11 **** Incremental Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+14:28:11 **** Incremental Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI0_IRQHandler':
+../Src/main.c:80:12: error: expected expression before '^' token
+  GPIOA_ODR=^(1<<13);
+            ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:28:18 **** Incremental Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+14:28:18 **** Incremental Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI0_IRQHandler':
+../Src/main.c:80:12: error: expected expression before '^' token
+  GPIOA_ODR=^(1<<13);
+            ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:28:32 **** Incremental Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+14:28:32 **** Incremental Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'EXTI0_IRQHandler':
+../Src/main.c:80:14: error: expected expression before '^' token
+  GPIOA_ODR = ^(1<<13);
+              ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:44:23 **** Incremental Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+14:44:23 **** Incremental Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_init':
+../Src/main.c:70:2: error: 'GPIOA_CRL' undeclared (first use in this function); did you mean 'GPIOA_CRH'?
+  GPIOA_CRL |= (1<<2);
+  ^~~~~~~~~
+  GPIOA_CRH
+../Src/main.c:70:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:46:45 **** Incremental Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+14:46:46 **** Incremental Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_init':
+../Src/main.c:71:2: error: 'GPIOA_CRL' undeclared (first use in this function); did you mean 'GPIOA_CRH'?
+  GPIOA_CRL |= (1<<2);
+  ^~~~~~~~~
+  GPIOA_CRH
+../Src/main.c:71:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:46:54 **** Incremental Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+14:46:54 **** Incremental Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Unit6_Lesson4_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 4\Unit6_Lesson4_Lab2\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Unit6_Lesson4_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Unit6_Lesson4_Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Unit6_Lesson4_Lab2.elf  > "Unit6_Lesson4_Lab2.list"
+arm-none-eabi-objcopy  -O binary  Unit6_Lesson4_Lab2.elf  "Unit6_Lesson4_Lab2.bin"
+arm-none-eabi-size   Unit6_Lesson4_Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	Unit6_Lesson4_Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Unit6_Lesson4_Lab2.bin
+Finished building: Unit6_Lesson4_Lab2.list
+ 
+ 
+14:53:38 **** Incremental Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+14:53:38 **** Incremental Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Unit6_Lesson4_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 4\Unit6_Lesson4_Lab2\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Unit6_Lesson4_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Unit6_Lesson4_Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Unit6_Lesson4_Lab2.elf  > "Unit6_Lesson4_Lab2.list"
+arm-none-eabi-objcopy  -O binary  Unit6_Lesson4_Lab2.elf  "Unit6_Lesson4_Lab2.bin"
+arm-none-eabi-size   Unit6_Lesson4_Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	Unit6_Lesson4_Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Unit6_Lesson4_Lab2.bin
+Finished building: Unit6_Lesson4_Lab2.list
+ 
+ 
+14:59:35 **** Incremental Build of configuration Debug for project Unit6_Lesson4 ****
+make -j16 all 
+arm-none-eabi-size   Unit6_Lesson4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Unit6_Lesson4.elf
+Finished building: default.size.stdout
+ 
+14:59:35 **** Incremental Build of configuration Debug for project Unit6_Lesson4_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Unit6_Lesson4_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 4\Unit6_Lesson4_Lab2\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Unit6_Lesson4_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Unit6_Lesson4_Lab2.elf
+ 
+arm-none-eabi-objdump -h -S  Unit6_Lesson4_Lab2.elf  > "Unit6_Lesson4_Lab2.list"
+arm-none-eabi-objcopy  -O binary  Unit6_Lesson4_Lab2.elf  "Unit6_Lesson4_Lab2.bin"
+arm-none-eabi-size   Unit6_Lesson4_Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	Unit6_Lesson4_Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Unit6_Lesson4_Lab2.bin
+Finished building: Unit6_Lesson4_Lab2.list
+ 
+ 
