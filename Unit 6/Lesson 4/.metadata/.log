@@ -332,3 +332,51 @@ java.lang.RuntimeException
 
 !ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-08-20 14:53:06.675
 !MESSAGE Falling back to default toolchain
+!SESSION 2024-08-21 16:57:07.661 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-08-21 16:57:42.296
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-21 16:57:48.051
+!MESSAGE Log4j initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 4\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-21 16:57:53.512
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-08-21 16:57:54.098
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2024-08-21 21:49:09.030 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 4
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-21 21:49:13.237
+!MESSAGE Log4j initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 4\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-21 21:49:17.029
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-08-21 21:49:17.632
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2024-08-25 22:39:48.118 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-25 22:39:58.947
+!MESSAGE Log4j initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 6\Lesson 4\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-25 22:40:05.152
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-08-25 22:40:05.753
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
