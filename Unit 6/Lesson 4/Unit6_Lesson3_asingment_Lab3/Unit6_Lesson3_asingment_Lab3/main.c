@@ -38,10 +38,10 @@ INT_init()
 	
 	/*bit(3,2)--> 11 --> rising edge in INT1
 	  bit(1,0)--> 01 --> Any logical change INT0*/
-	Set_bit(MCUCR,0);
-	Clear_bit(MCUCR,1);
-	Set_bit(MCUCR,2);
-	Set_bit(MCUCR,3);
+	Set_bit(INT_MCUCR,0);
+	Clear_bit(INT_MCUCR,1);
+	Set_bit(INT_MCUCR,2);
+	Set_bit(INT_MCUCR,3);
 	
 	//If ISC2 is written to zero, a falling edge on INT2 activates the interrupt.
 	Clear_bit(INT_MCUCSR,6);
