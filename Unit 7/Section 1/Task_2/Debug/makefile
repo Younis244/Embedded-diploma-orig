@@ -34,20 +34,14 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := Task_1
+BUILD_ARTIFACT_NAME := Task_2
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 LSS += \
-Task_1.lss \
-
-FLASH_IMAGE += \
-Task_1.hex \
-
-EEPROM_IMAGE += \
-Task_1.eep \
+Task_2.lss \
 
 SIZEDUMMY += \
 sizedummy \
@@ -57,46 +51,34 @@ sizedummy \
 all: main-build
 
 # Main-build Target
-main-build: Task_1.elf secondary-outputs
+main-build: Task_2.elf secondary-outputs
 
 # Tool invocations
-Task_1.elf: $(OBJS) $(USER_OBJS) makefile objects.mk $(OPTIONAL_TOOL_DEPS)
+Task_2.elf: $(OBJS) $(USER_OBJS) makefile objects.mk $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C Linker'
-	avr-gcc -Wl,-Map,Task_1.map -mmcu=atmega32 -o "Task_1.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-gcc -Wl,-Map,Task_2.map -mmcu=atmega16 -o "Task_2.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-Task_1.lss: Task_1.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
+Task_2.lss: Task_2.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
 	@echo 'Invoking: AVR Create Extended Listing'
-	-avr-objdump -h -S Task_1.elf  >"Task_1.lss"
+	-avr-objdump -h -S Task_2.elf  >"Task_2.lss"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Task_1.hex: Task_1.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
-	@echo 'Create Flash image (ihex format)'
-	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Task_1.elf  "Task_1.hex"
-	@echo 'Finished building: $@'
-	@echo ' '
-
-Task_1.eep: Task_1.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
-	@echo 'Create eeprom image (ihex format)'
-	-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Task_1.elf  "Task_1.eep"
-	@echo 'Finished building: $@'
-	@echo ' '
-
-sizedummy: Task_1.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
+sizedummy: Task_2.elf makefile objects.mk $(OPTIONAL_TOOL_DEPS)
 	@echo 'Invoking: Print Size'
-	-avr-size --format=avr --mcu=atmega32 Task_1.elf
+	-avr-size --format=avr --mcu=atmega16 Task_2.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(FLASH_IMAGE)$(ELFS)$(OBJS)$(ASM_DEPS)$(EEPROM_IMAGE)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) Task_1.elf
+	-$(RM) $(ELFS)$(OBJS)$(ASM_DEPS)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) Task_2.elf
 	-@echo ' '
 
-secondary-outputs: $(LSS) $(FLASH_IMAGE) $(EEPROM_IMAGE) $(SIZEDUMMY)
+secondary-outputs: $(LSS) $(SIZEDUMMY)
 
 .PHONY: all clean dependents main-build
 

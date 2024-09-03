@@ -8,15 +8,11 @@
 
 #define F_CPU 80000000UL
 
-#include <util/delay.h>
-#include <avr/io.h>
-#include <avr/interrupt.h>
+#include "util/delay.h"
+#include "avr/io.h"
+#include "avr/interrupt.h"
+#include "Utils.h"
 
-#define Set_bit(register,bit)		register|=(1<<bit)
-//#define Set_bit_hex(register,hex)	register|=(hex)
-#define Toggle_bit(register,bit)	register^=(1<<bit)
-//#define Clear_bit_hex(register,hex)	register&=(hex)
-#define Clear_bit(register,bit)		register&=~(1<<bit)
 
 #define BASE			0x20
 #define DDRD			*(volatile unsigned char*)(BASE + 0x11)
