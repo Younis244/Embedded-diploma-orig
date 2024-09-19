@@ -109,8 +109,8 @@ typedef struct
 	volatile uint32_t APB1ENR;
 	volatile uint32_t BDCR;
 	volatile uint32_t CSR;
-	volatile uint32_t AHBRSTR;
-	volatile uint32_t CFGR2;
+//	volatile uint32_t AHBRSTR;
+//	volatile uint32_t CFGR2;
 }RCC_TypeDef;
 
 //-*-*-*-*-*-*-*-*-*-*
@@ -187,24 +187,6 @@ typedef struct
 //-*-*-*-*-*-*-*-*-*-*-*-
 //Generic Macros:
 //-*-*-*-*-*-*-*-*-*-*-*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

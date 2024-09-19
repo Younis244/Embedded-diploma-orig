@@ -23,7 +23,7 @@
 typedef struct
 {
 	/*Specifies the gpio pins to be configured
-	 *This parameter must be set based on @ref GPIO_Pins_define*/
+	 *This parameter must be set based on @ref GPIO_Pin_define*/
 	uint16_t GPIO_Pin_Num;
 
 	/*Specifies the operating mode for the selected pins
@@ -51,7 +51,7 @@ typedef struct
 #define GPIO_Pin_Set					1
 #define GPIO_Pin_Reset					0
 
-// @ref GPIO_Pins_define
+// @ref GPIO_Pin_define
 #define GPIO_Pin_0						((uint16_t)0x0001) /*Pin 0 selected*/
 #define GPIO_Pin_1						((uint16_t)0x0002) /*Pin 1 selected->10*/
 #define GPIO_Pin_2						((uint16_t)0x0004) /*Pin 2 selected->100*/
@@ -128,16 +128,6 @@ void MCAL_GPIO_WritePort(GPIO_TypeDef* GPIOx , uint16_t Value);//Contains 16 bit
 void MCAL_GPIO_TogglePin(GPIO_TypeDef* GPIOx , uint16_t PinNumber);
 
 uint8_t MCAL_GPIO_LockPin(GPIO_TypeDef* GPIOx , uint16_t PinNumber);
-
-
-
-
-
-
-
-
-
-
 
 
 

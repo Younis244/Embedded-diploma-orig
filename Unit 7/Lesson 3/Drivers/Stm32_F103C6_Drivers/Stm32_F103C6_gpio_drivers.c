@@ -70,7 +70,7 @@ uint8_t Get_CRLH_Position(uint16_t PinNumber)
 
 /**================================================================
  * @Fn			-MCAL_GPIO_Init
- * @brief 		-Initializes the GPIOx Piny peripheral according to the specified parametrs in PinConfig
+ * @brief 		-Initializes the GPIOx Piny peripheral according to the specified parameters in PinConfig
  * @param [in] 	-GPIOx: x(A...E)
  * @param [in] 	-PinConfig ptr to GPIO_Pin_Config_t struct that contains the configuration info for the specified GPIO peripheral
  * @returnval 	-None
@@ -92,7 +92,7 @@ void MCAL_GPIO_Init(GPIO_TypeDef* GPIOx , GPIO_Pin_Config_t* PinConfig)
 	if((PinConfig->GPIO_Mode == GPIO_Mode_Output_AF_OD) || (PinConfig->GPIO_Mode == GPIO_Mode_Output_AF_PP) || (PinConfig->GPIO_Mode == GPIO_Mode_Output_OD) || (PinConfig->GPIO_Mode == GPIO_Mode_Output_PP))
 	{
 		//Set CNF8[1:0] MODE8[1:0]
-		Pin_Config = ( (((PinConfig->GPIO_Mode -4) << 2 | (PinConfig->GPIO_Output_Speed)) & 0x0f));//I did minus 4 because i defined the output from 4->7 and then shifted by 2 because Cnf is the upper 2 bits then anded by 0x0f causei need only those 4 bits
+		Pin_Config = ( (((PinConfig->GPIO_Mode -4) << 2 | (PinConfig->GPIO_Output_Speed)) & 0x0f));//I did minus 4 because i defined the output from 4->7 and then shifted by 2 because Cnf is the upper 2 bits then anded by 0x0f cause i need only those 4 bits
 		//		(*configRegister) |= ((Pin_Config) << Get_CRLH_Position(PinConfig->GPIO_Pin_Num));
 	}
 
@@ -138,16 +138,16 @@ void MCAL_GPIO_Init(GPIO_TypeDef* GPIOx , GPIO_Pin_Config_t* PinConfig)
  * */
 void MCAL_GPIO_DeInit(GPIO_TypeDef* GPIOx)
 {
-	GPIOx->CRL = 	0x44444444;
-	GPIOx->CRH = 	0x44444444;
-	//GPIOx->IDR = 0x0000XXXX; (Read only)
-	GPIOx->ODR = 	0x00000000;
-	GPIOx->BSRR = 	0x00000000;
-	GPIOx->BRR = 	0x00000000;
-	GPIOx->LCKR = 	0x00000000;
+//	GPIOx->CRL = 	0x44444444;
+//	GPIOx->CRH = 	0x44444444;
+//	//GPIOx->IDR = 0x0000XXXX; (Read only)
+//	GPIOx->ODR = 	0x00000000;
+//	GPIOx->BSRR = 	0x00000000;
+//	GPIOx->BRR = 	0x00000000;
+//	GPIOx->LCKR = 	0x00000000;
 
 	/*Or you can use the reset controller
-	 *APB2 peripheral reset register (RCC_APB2RSTR)
+	 *APB2 peripheral reset register (RCC_APB2RSTR)---> This is better
 	 *Set and cleared by SW */
 	if(GPIOx == GPIOA)
 	{
@@ -187,6 +187,7 @@ void MCAL_GPIO_DeInit(GPIO_TypeDef* GPIOx)
 uint8_t MCAL_GPIO_ReadPin(GPIO_TypeDef* GPIOx , uint16_t PinNumber)
 {
 	uint8_t BitStatus;
+
 	if(((GPIOx->IDR) & PinNumber) != (uint32_t)GPIO_Pin_Reset) //Cast 3ashan bkrnno be 7aga uint32_t
 	{
 		BitStatus = GPIO_Pin_Set;
@@ -205,7 +206,7 @@ uint8_t MCAL_GPIO_ReadPin(GPIO_TypeDef* GPIOx , uint16_t PinNumber)
  * @returnval 	-The input Port value
  * Note			-None
  * */
-uint16_t MCAL_GPIO_ReadPort(GPIO_TypeDef* GPIOx)
+uint16_t MCAL_GPIO_ReadPort(GPIO_TypeDef* GPIOx)//uint16_t because the pin is 16 bit-> 2 bytes
 {
 	uint16_t PortVal ;
 	PortVal = (uint16_t)GPIOx->IDR;//Input data register

@@ -581,3 +581,185 @@
 
 
 2024-09-17 16:23:03,876 [INFO] Activator:179 - !SESSION log4j initialized
+2024-09-17 16:23:07,912 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:23:07,913 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:23:07,964 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:23:07,964 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:23:08,014 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:23:08,015 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:13,365 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:13,365 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:13,481 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:13,481 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:13,604 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:13,604 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:13,723 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:13,723 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:13,836 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:13,837 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:14,040 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:14,042 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:14,157 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:14,157 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:14,285 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:14,285 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:14,396 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:14,397 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:14,544 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:14,544 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:14,656 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:14,656 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-17 16:44:14,768 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-17 16:44:14,768 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:23:14,883 [INFO] Activator:178 - 
+
+
+2024-09-18 17:23:14,887 [INFO] Activator:179 - !SESSION log4j initialized
+2024-09-18 17:23:21,376 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:23:21,377 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:23:21,436 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:23:21,437 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:23:21,494 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:23:21,495 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:57,575 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:57,576 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:57,638 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:57,638 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:57,691 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:57,692 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:57,762 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:57,762 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:57,833 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:57,833 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:57,955 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:57,955 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:58,033 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:58,034 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:58,100 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:58,101 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:58,176 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:58,177 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:58,293 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:58,293 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:58,359 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:58,360 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 17:44:58,423 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 17:44:58,424 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 18:37:44,031 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 18:37:44,032 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 18:37:44,126 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 18:37:44,127 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 18:37:44,183 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 18:37:44,183 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 19:30:44,857 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 19:30:44,860 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 19:30:44,912 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 19:30:44,912 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 19:30:44,967 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 19:30:44,968 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:37:46,736 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:37:46,737 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:37:46,805 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:37:46,806 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:37:46,859 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:37:46,860 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:41:50,230 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:41:50,231 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:41:50,286 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:41:50,286 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:41:50,341 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:41:50,341 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:48:39,141 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:48:39,141 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:48:39,202 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:48:39,202 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:48:39,254 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:48:39,254 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:54:51,106 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:54:51,106 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:54:51,162 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:54:51,162 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:54:51,212 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:54:51,213 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:56:46,476 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:56:46,476 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:56:46,528 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:56:46,529 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 22:56:46,582 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 22:56:46,582 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:03:52,781 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:03:52,781 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:03:52,842 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:03:52,843 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:03:52,900 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:03:52,901 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:06:11,931 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:06:11,931 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:06:11,984 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:06:11,985 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:06:12,038 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:06:12,038 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:11:56,242 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:11:56,243 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:11:56,294 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:11:56,294 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:11:56,345 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:11:56,345 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:13:36,082 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:13:36,082 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:13:36,140 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:13:36,140 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:13:36,191 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:13:36,191 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:21:50,099 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:21:50,100 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:21:50,159 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:21:50,159 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:21:50,235 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:21:50,235 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:22:42,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:22:42,940 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:22:43,023 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:22:43,023 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:22:43,086 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:22:43,086 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:23:39,687 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:23:39,688 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:23:39,743 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:23:39,744 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:23:39,799 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:23:39,799 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:24:48,420 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:24:48,420 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:24:48,476 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:24:48,477 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:24:48,532 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:24:48,532 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:31:22,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:31:22,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:31:22,306 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:31:22,306 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:31:22,373 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:31:22,373 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:31:46,007 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:31:46,007 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:31:46,070 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:31:46,071 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:31:46,126 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:31:46,126 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:35:17,437 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:35:17,437 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:35:17,494 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:35:17,495 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:35:17,551 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:35:17,551 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:47:24,978 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:47:24,978 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:47:25,032 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:47:25,032 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:47:25,081 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2024-09-18 23:47:25,082 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2024-09-18 23:48:46,360 [INFO] Activator:178 - 
+
+
+2024-09-18 23:48:46,362 [INFO] Activator:179 - !SESSION log4j initialized
