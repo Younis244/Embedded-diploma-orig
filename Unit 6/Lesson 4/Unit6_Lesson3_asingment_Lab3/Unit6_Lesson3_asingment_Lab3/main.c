@@ -25,6 +25,8 @@
 #define INT_GICR		*(volatile unsigned char*)(BASE + 0x3B)
 #define INT_SREG		*(volatile unsigned char*)(BASE + 0x3F) 
 
+UBRRL
+
 INT_init()
 {
 	//making portD->pin5,6,7 as an output

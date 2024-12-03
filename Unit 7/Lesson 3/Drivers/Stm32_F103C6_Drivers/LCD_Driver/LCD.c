@@ -7,7 +7,7 @@
 
 #include "LCD.h"
 
-
+extern GPIO_Pin_Config_t PinCnfg;
 uint16_t GPIO_Pins_Array[] = {GPIO_Pin_0 , GPIO_Pin_1 , GPIO_Pin_2 , GPIO_Pin_3 , GPIO_Pin_4 , GPIO_Pin_5 , GPIO_Pin_6 , GPIO_Pin_7 };
 
 

@@ -1,10 +1,18 @@
-08:34:00 **** Incremental Build of configuration Debug for project Drivers ****
+19:33:53 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size  Drivers.elf 
+arm-none-eabi-objdump -h -S Drivers.elf  > "Drivers.list"
    text	   data	    bss	    dec	    hex	filename
-   2920	     56	   1568	   4544	   11c0	Drivers.elf
+   3092	     56	   1568	   4716	   126c	Drivers.elf
 Finished building: default.size.stdout
  
+Finished building: Drivers.list
+ 
 
-08:34:00 Build Finished. 0 errors, 0 warnings. (took 161ms)
+19:33:54 Build Finished. 0 errors, 1 warnings. (took 506ms)
 

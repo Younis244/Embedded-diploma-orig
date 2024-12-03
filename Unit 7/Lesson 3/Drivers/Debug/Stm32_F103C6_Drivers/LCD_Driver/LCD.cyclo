@@ -1,0 +1,10 @@
+../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:14:6:my_wait	3
+../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:26:6:LCD_En_Kick	1
+../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:36:6:LCD_GOTO_XY	7
+../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:54:6:LCD_Clear_Screen	1
+../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:59:6:LCD_Is_Busy	2
+../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:89:6:LCD_Init	2
+../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:147:6:LCD_Write_Command	1
+../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:178:6:LCD_Write_Char	1
+../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:213:6:LCD_Write_String	4
+../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:234:6:LCD_Custom_Character	1

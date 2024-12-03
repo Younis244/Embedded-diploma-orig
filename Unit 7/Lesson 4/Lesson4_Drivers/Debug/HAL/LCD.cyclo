@@ -1,0 +1,9 @@
+../HAL/LCD.c:26:6:LCD_En_Kick	1
+../HAL/LCD.c:36:6:LCD_GOTO_XY	7
+../HAL/LCD.c:54:6:LCD_Clear_Screen	1
+../HAL/LCD.c:59:6:LCD_Is_Busy	2
+../HAL/LCD.c:89:6:LCD_Init	2
+../HAL/LCD.c:147:6:LCD_Write_Command	1
+../HAL/LCD.c:178:6:LCD_Write_Char	1
+../HAL/LCD.c:213:6:LCD_Write_String	4
+../HAL/LCD.c:234:6:LCD_Custom_Character	1

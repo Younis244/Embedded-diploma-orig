@@ -1,554 +1,351 @@
-23:48:02 **** Incremental Build of configuration Debug for project Drivers ****
+19:21:37 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2388	      8	   1568	   3964	    f7c	Drivers.elf
-Finished building: default.size.stdout
- 
-23:50:14 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_F103C6_gpio_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_F103C6_gpio_drivers.d" -MT"Stm32_F103C6_Drivers/Stm32_F103C6_gpio_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_F103C6_gpio_drivers.o"
-arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
 arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2180	      8	   1568	   3756	    eac	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-23:50:38 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2388	      8	   1568	   3964	    f7c	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-23:52:17 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2388	      8	   1568	   3964	    f7c	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-23:53:42 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2396	      8	   1568	   3972	    f84	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-23:59:28 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1964	      8	   1568	   3540	    dd4	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-00:07:09 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1964	      8	   1568	   3540	    dd4	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-00:07:45 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1964	      8	   1568	   3540	    dd4	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-00:08:06 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1964	      8	   1568	   3540	    dd4	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-00:10:13 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1816	     24	   1568	   3408	    d50	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-00:11:34 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1816	     24	   1568	   3408	    d50	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-00:12:16 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:104:3: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-   my_wait(500);
-   ^~~~~~~
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1828	     24	   1568	   3420	    d5c	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-00:15:26 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Keypad_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o"
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-In file included from ../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:8:0:
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.h:13:10: fatal error: avr/io.h: No such file or directory
- #include "avr/io.h"
-          ^~~~~~~~~~
-compilation terminated.
-make: *** [Stm32_F103C6_Drivers/Keypad_Driver/subdir.mk:18: Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o] Error 1
-make: *** Waiting for unfinished jobs....
-In file included from ../Src/main.c:29:0:
-C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver/Keypad.h:13:10: fatal error: avr/io.h: No such file or directory
- #include "avr/io.h"
-          ^~~~~~~~~~
-compilation terminated.
-make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/LCD_Driver/LCD.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/LCD_Driver/LCD.h:15: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
 "make -j16 all" terminated with exit code 2. Build might be incomplete.
-00:21:23 **** Incremental Build of configuration Debug for project Drivers ****
+19:28:40 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Keypad_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o"
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c: In function 'Keypad_Init':
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:16:2: error: 'DataDirection_Keypad_Port' undeclared (first use in this function)
-  DataDirection_Keypad_Port &= ~((1<<R0) | (1<<R1) | (1<<R2) | (1<<R3));
-  ^~~~~~~~~~~~~~~~~~~~~~~~~
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:16:2: note: each undeclared identifier is reported only once for each function it appears in
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:18:34: warning: left shift count >= width of type [-Wshift-count-overflow]
-  DataDirection_Keypad_Port |= ((1<<C0) | (1<<C1) | (1<<C2) | (1<<C3));
-                                  ^~
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:18:44: warning: left shift count >= width of type [-Wshift-count-overflow]
-  DataDirection_Keypad_Port |= ((1<<C0) | (1<<C1) | (1<<C2) | (1<<C3));
-                                            ^~
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:18:54: warning: left shift count >= width of type [-Wshift-count-overflow]
-  DataDirection_Keypad_Port |= ((1<<C0) | (1<<C1) | (1<<C2) | (1<<C3));
-                                                      ^~
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:18:64: warning: left shift count >= width of type [-Wshift-count-overflow]
-  DataDirection_Keypad_Port |= ((1<<C0) | (1<<C1) | (1<<C2) | (1<<C3));
-                                                                ^~
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:21:14: error: lvalue required as left operand of assignment
-  Keypad_Port = 0xFF;
-              ^
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c: In function 'Keypad_GetChar':
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:33:15: error: lvalue required as left operand of assignment
-   Keypad_Port |= ((1<<Keypad_Columns[0]) | (1<<Keypad_Columns[1]) | (1<<Keypad_Columns[2]) | (1<<Keypad_Columns[3]));
-               ^~
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:34:15: error: lvalue required as left operand of assignment
-   Keypad_Port &= ~(1<<Keypad_Columns[i]);
-               ^~
-../Src/main.c:104:3: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-   my_wait(500);
-   ^~~~~~~
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:39:9: error: 'Keypad_Pin' undeclared (first use in this function); did you mean 'Keypad_Init'?
-    if(!(Keypad_Pin & (1<<Keypad_Rows[j])))
-         ^~~~~~~~~~
-         Keypad_Init
-make: *** [Stm32_F103C6_Drivers/Keypad_Driver/subdir.mk:18: Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o] Error 1
-make: *** Waiting for unfinished jobs....
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
 "make -j16 all" terminated with exit code 2. Build might be incomplete.
-00:25:03 **** Incremental Build of configuration Debug for project Drivers ****
+19:28:51 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Keypad_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o"
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c: In function 'Keypad_GetChar':
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:65:15: error: lvalue required as left operand of assignment
-   Keypad_Port |= ((1<<Keypad_Columns[0]) | (1<<Keypad_Columns[1]) | (1<<Keypad_Columns[2]) | (1<<Keypad_Columns[3]));
-               ^~
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:66:15: error: lvalue required as left operand of assignment
-   Keypad_Port &= ~(1<<Keypad_Columns[i]);
-               ^~
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:71:9: error: 'Keypad_Pin' undeclared (first use in this function); did you mean 'Keypad_Init'?
-    if(!(Keypad_Pin & (1<<Keypad_Rows[j])))
-         ^~~~~~~~~~
-         Keypad_Init
-../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c:71:9: note: each undeclared identifier is reported only once for each function it appears in
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:104:3: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-   my_wait(500);
-   ^~~~~~~
-make: *** [Stm32_F103C6_Drivers/Keypad_Driver/subdir.mk:18: Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o] Error 1
-make: *** Waiting for unfinished jobs....
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o: in function `Keypad_Init':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.c:63: undefined reference to `PinCnfg'
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/LCD_Driver/LCD.o: in function `LCD_Init':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:144: undefined reference to `PinCnfg'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
 "make -j16 all" terminated with exit code 2. Build might be incomplete.
-00:31:35 **** Incremental Build of configuration Debug for project Drivers ****
+19:29:23 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Keypad_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o"
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1828	     24	   1568	   3420	    d5c	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-00:36:33 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keypad_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Keypad_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keypad_Driver/Keypad.o"
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:104:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(500);
-  ^~~~~~~
-../Src/main.c:110:3: error: 'Pressed_Key' undeclared (first use in this function)
-   Pressed_Key = Keypad_GetChar();
-   ^~~~~~~~~~~
-../Src/main.c:110:3: note: each undeclared identifier is reported only once for each function it appears in
-../Src/main.c:101:16: warning: unused variable 'Key_Pressed' [-Wunused-variable]
-  unsigned char Key_Pressed;
-                ^~~~~~~~~~~
-make: *** [Src/subdir.mk:24: Src/main.o] Error 1
-make: *** Waiting for unfinished jobs....
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
 "make -j16 all" terminated with exit code 2. Build might be incomplete.
-00:36:47 **** Incremental Build of configuration Debug for project Drivers ****
+19:29:42 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:104:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(500);
-  ^~~~~~~
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+../Src/main.c:154:9: warning: implicit declaration of function 'Keypad_Init' [-Wimplicit-function-declaration]
+  154 |         Keypad_Init();
+      |         ^~~~~~~~~~~
+../Src/main.c:162:31: warning: implicit declaration of function 'Keypad_GetChar' [-Wimplicit-function-declaration]
+  162 |                 Pressed_Key = Keypad_GetChar();
+      |                               ^~~~~~~~~~~~~~
 arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
 Finished building target: Drivers.elf
  
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-size  Drivers.elf 
+arm-none-eabi-objdump -h -S Drivers.elf  > "Drivers.list"
    text	   data	    bss	    dec	    hex	filename
-   2556	     56	   1568	   4180	   1054	Drivers.elf
+   3092	     56	   1568	   4716	   126c	Drivers.elf
 Finished building: default.size.stdout
  
-Finished building: Drivers.bin
 Finished building: Drivers.list
  
- 
-00:37:26 **** Incremental Build of configuration Debug for project Drivers ****
+19:29:48 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2556	     56	   1568	   4180	   1054	Drivers.elf
-Finished building: default.size.stdout
- 
-00:39:45 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2556	     56	   1568	   4180	   1054	Drivers.elf
-Finished building: default.size.stdout
- 
-00:48:54 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:104:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(500);
-  ^~~~~~~
+../Src/main.c:136:9: warning: implicit declaration of function 'LCD_Init' [-Wimplicit-function-declaration]
+  136 |         LCD_Init();
+      |         ^~~~~~~~
+../Src/main.c:140:9: warning: implicit declaration of function 'LCD_Write_String' [-Wimplicit-function-declaration]
+  140 |         LCD_Write_String("Younis Tamer");
+      |         ^~~~~~~~~~~~~~~~
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+../Src/main.c:142:9: warning: implicit declaration of function 'LCD_Clear_Screen' [-Wimplicit-function-declaration]
+  142 |         LCD_Clear_Screen();
+      |         ^~~~~~~~~~~~~~~~
+../Src/main.c:150:17: warning: implicit declaration of function 'LCD_Write_Char' [-Wimplicit-function-declaration]
+  150 |                 LCD_Write_Char(lcd[i]);
+      |                 ^~~~~~~~~~~~~~
+../Src/main.c:154:9: warning: implicit declaration of function 'Keypad_Init' [-Wimplicit-function-declaration]
+  154 |         Keypad_Init();
+      |         ^~~~~~~~~~~
+../Src/main.c:162:31: warning: implicit declaration of function 'Keypad_GetChar' [-Wimplicit-function-declaration]
+  162 |                 Pressed_Key = Keypad_GetChar();
+      |                               ^~~~~~~~~~~~~~
 arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
 Finished building target: Drivers.elf
  
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-size  Drivers.elf 
+arm-none-eabi-objdump -h -S Drivers.elf  > "Drivers.list"
    text	   data	    bss	    dec	    hex	filename
-   2556	     56	   1568	   4180	   1054	Drivers.elf
+   3092	     56	   1568	   4716	   126c	Drivers.elf
 Finished building: default.size.stdout
  
-Finished building: Drivers.bin
 Finished building: Drivers.list
  
- 
-08:11:20 **** Incremental Build of configuration Debug for project Drivers ****
+19:29:53 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:116:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(500);
-  ^~~~~~~
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
 arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2732	     56	   1568	   4356	   1104	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-08:13:19 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:123:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(500);
-  ^~~~~~~
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2828	     56	   1568	   4452	   1164	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-08:14:21 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:141:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(500);
-  ^~~~~~~
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2924	     56	   1568	   4548	   11c4	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-08:19:15 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:141:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(500);
-  ^~~~~~~
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2924	     56	   1568	   4548	   11c4	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-08:19:40 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:141:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(500);
-  ^~~~~~~
-arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Drivers.elf
- 
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
-   text	   data	    bss	    dec	    hex	filename
-   2924	     56	   1568	   4548	   11c4	Drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: Drivers.bin
-Finished building: Drivers.list
- 
- 
-08:30:15 **** Incremental Build of configuration Debug for project Drivers ****
-make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:141:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(100);
-  ^~~~~~~
-../Src/main.c:34:15: error: invalid suffix "x" on integer constant
- #define ZERO  0x
-               ^
-../Src/main.c:144:25: note: in expansion of macro 'ZERO'
-  unsigned char seg[] = {ZERO , ONE , TWO , THREE , FOUR , FIVE , SIX , SEVEN , EIGHT , NINE , ZERO};
-                         ^~~~
-../Src/main.c:34:15: error: invalid suffix "x" on integer constant
- #define ZERO  0x
-               ^
-../Src/main.c:144:95: note: in expansion of macro 'ZERO'
-  unsigned char seg[] = {ZERO , ONE , TWO , THREE , FOUR , FIVE , SIX , SEVEN , EIGHT , NINE , ZERO};
-                                                                                               ^~~~
-make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
 "make -j16 all" terminated with exit code 2. Build might be incomplete.
-08:30:21 **** Incremental Build of configuration Debug for project Drivers ****
+19:30:08 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
 ../Src/main.c: In function 'main':
-../Src/main.c:141:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(100);
-  ^~~~~~~
+../Src/main.c:136:9: warning: implicit declaration of function 'LCD_Init' [-Wimplicit-function-declaration]
+  136 |         LCD_Init();
+      |         ^~~~~~~~
+../Src/main.c:140:9: warning: implicit declaration of function 'LCD_Write_String' [-Wimplicit-function-declaration]
+  140 |         LCD_Write_String("Younis Tamer");
+      |         ^~~~~~~~~~~~~~~~
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+../Src/main.c:142:9: warning: implicit declaration of function 'LCD_Clear_Screen' [-Wimplicit-function-declaration]
+  142 |         LCD_Clear_Screen();
+      |         ^~~~~~~~~~~~~~~~
+../Src/main.c:150:17: warning: implicit declaration of function 'LCD_Write_Char' [-Wimplicit-function-declaration]
+  150 |                 LCD_Write_Char(lcd[i]);
+      |                 ^~~~~~~~~~~~~~
+../Src/main.c:154:9: warning: implicit declaration of function 'Keypad_Init' [-Wimplicit-function-declaration]
+  154 |         Keypad_Init();
+      |         ^~~~~~~~~~~
+../Src/main.c:162:31: warning: implicit declaration of function 'Keypad_GetChar' [-Wimplicit-function-declaration]
+  162 |                 Pressed_Key = Keypad_GetChar();
+      |                               ^~~~~~~~~~~~~~
 arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
 Finished building target: Drivers.elf
  
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-size  Drivers.elf 
+arm-none-eabi-objdump -h -S Drivers.elf  > "Drivers.list"
    text	   data	    bss	    dec	    hex	filename
-   2920	     56	   1568	   4544	   11c0	Drivers.elf
+   3092	     56	   1568	   4716	   126c	Drivers.elf
 Finished building: default.size.stdout
  
-Finished building: Drivers.bin
 Finished building: Drivers.list
  
- 
-08:31:59 **** Incremental Build of configuration Debug for project Drivers ****
+19:30:26 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keypad_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:141:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
-  my_wait(100);
-  ^~~~~~~
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
 arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/LCD_Driver/LCD.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/LCD_Driver/LCD.h:15: multiple definition of `PinCnfg'; ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:30:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
 Finished building target: Drivers.elf
  
-arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
-arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
-arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-size  Drivers.elf 
+arm-none-eabi-objdump -h -S Drivers.elf  > "Drivers.list"
    text	   data	    bss	    dec	    hex	filename
-   2920	     56	   1568	   4544	   11c0	Drivers.elf
+   3092	     56	   1568	   4716	   126c	Drivers.elf
 Finished building: default.size.stdout
  
-Finished building: Drivers.bin
 Finished building: Drivers.list
  
- 
-08:34:00 **** Incremental Build of configuration Debug for project Drivers ****
+19:30:40 **** Incremental Build of configuration Debug for project Drivers ****
 make -j16 all 
-arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o: in function `Keypad_Init':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.c:63: undefined reference to `PinCnfg'
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/LCD_Driver/LCD.o: in function `LCD_Init':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:144: undefined reference to `PinCnfg'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:30:45 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size  Drivers.elf 
+arm-none-eabi-objdump -h -S Drivers.elf  > "Drivers.list"
    text	   data	    bss	    dec	    hex	filename
-   2920	     56	   1568	   4544	   11c0	Drivers.elf
+   3092	     56	   1568	   4716	   126c	Drivers.elf
 Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+19:30:52 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:31:53 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:136:9: warning: implicit declaration of function 'LCD_Init' [-Wimplicit-function-declaration]
+  136 |         LCD_Init();
+      |         ^~~~~~~~
+../Src/main.c:140:9: warning: implicit declaration of function 'LCD_Write_String' [-Wimplicit-function-declaration]
+  140 |         LCD_Write_String("Younis Tamer");
+      |         ^~~~~~~~~~~~~~~~
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+../Src/main.c:142:9: warning: implicit declaration of function 'LCD_Clear_Screen' [-Wimplicit-function-declaration]
+  142 |         LCD_Clear_Screen();
+      |         ^~~~~~~~~~~~~~~~
+../Src/main.c:150:17: warning: implicit declaration of function 'LCD_Write_Char' [-Wimplicit-function-declaration]
+  150 |                 LCD_Write_Char(lcd[i]);
+      |                 ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:31:59 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+../Src/main.c:154:9: warning: implicit declaration of function 'Keypad_Init' [-Wimplicit-function-declaration]
+  154 |         Keypad_Init();
+      |         ^~~~~~~~~~~
+../Src/main.c:162:31: warning: implicit declaration of function 'Keypad_GetChar' [-Wimplicit-function-declaration]
+  162 |                 Pressed_Key = Keypad_GetChar();
+      |                               ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size  Drivers.elf 
+arm-none-eabi-objdump -h -S Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3092	     56	   1568	   4716	   126c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+19:32:13 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/LCD_Driver/LCD.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/LCD_Driver/LCD.h:15: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:33:12 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/LCD_Driver/LCD.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:10: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:33:19 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/LCD_Driver/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/LCD_Driver/LCD.d" -MT"Stm32_F103C6_Drivers/LCD_Driver/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/LCD_Driver/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: multiple definition of `PinCnfg'; ./Src/main.o:C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.h:16: first defined here
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:33:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:141:9: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  141 |         my_wait(100);
+      |         ^~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o: in function `Keypad_Init':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.c:64: undefined reference to `PinCnfg'
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Stm32_F103C6_Drivers/LCD_Driver/LCD.o: in function `LCD_Init':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Debug/../Stm32_F103C6_Drivers/LCD_Driver/LCD.c:144: undefined reference to `PinCnfg'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:66: Drivers.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:33:53 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/Keyboard_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/LCD_Driver" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 3/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.d" -MT"Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Keyboard_Driver/Keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 3\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.4.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: Drivers.elf has a LOAD segment with RWX permissions
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size  Drivers.elf 
+arm-none-eabi-objdump -h -S Drivers.elf  > "Drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3092	     56	   1568	   4716	   126c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
  

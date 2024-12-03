@@ -1,0 +1,87 @@
+/*
+ * Stm32_F103C6_gpio_drivers.c
+ *
+ *  Created on: Sep 11, 2024
+ *      Author: Younis Tamer
+ */
+
+
+
+#include "Stm32_F103C6_EXTI_drivers.h"
+#include "Stm32_F103C6_gpio_drivers.h"
+
+/*
+ * ===================================================================================================
+ * 										Generic Macros
+ * ===================================================================================================
+ */
+
+/*
+ * ===================================================================================================
+ * 										Generic Functions
+ * ===================================================================================================
+ */
+
+
+
+/*
+ * ===================================================================================================
+ * 										APIs Functions Definitions
+ * ===================================================================================================
+ */
+
+/**================================================================
+ * @Fn			-MCAL_EXTI_GPIO_Init
+ * @brief 		-Initializes the GPIOx Piny peripheral according to the specified parameters in PinConfig
+ * @param [in] 	-GPIOx: x(A...E)
+ * @param [in] 	-PinConfig ptr to GPIO_Pin_Config_t struct that contains the configuration info for the specified GPIO peripheral
+ * @returnval 	-None
+ * Note			-Stm32F103C6 MCU has GPIO A,B,C,D,E Modules
+ * 				But LQFP48 Package has only GPIO A,B,Part of C,D exported as external pins from the
+ */
+void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+{
+
+}
+
+/**================================================================
+ * @Fn			-MCAL_EXTI_GPIO_DeInit
+ * @brief 		-reset EXTI Registers and NVIC corresponding IRQ Mask
+ * @returnval 	-None
+ * Note			-None
+ */
+void MCAL_EXTI_GPIO_DeInit(void)
+{
+	EXTI->IMR 	= 0x00000000;
+	EXTI->EMR 	= 0x00000000;
+	EXTI->RTSR  = 0x00000000;
+	EXTI->FTSR 	= 0x00000000;
+	EXTI->SWIER = 0x00000000;
+
+	//	This bit is
+	//	cleared by writing a ‘1’ into the bit.
+	EXTI->PR	= 0xFFFFFFFF;
+
+	//Disable EXTI IRQ From NVIC
+
+}
+
+/**================================================================
+ * @Fn			-MCAL_EXTI_GPIO_Update
+ * @brief 		-Initializes the GPIOx Piny peripheral according to the specified parameters in PinConfig
+ * @param [in] 	-GPIOx: x(A...E)
+ * @param [in] 	-PinConfig ptr to GPIO_Pin_Config_t struct that contains the configuration info for the specified GPIO peripheral
+ * @returnval 	-None
+ * Note			-Stm32F103C6 MCU has GPIO A,B,C,D,E Modules
+ * 				But LQFP48 Package has only GPIO A,B,Part of C,D exported as external pins from the
+ */
+void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config);//Converting from rising to falling and vice versa
+
+
+
+
+
+
+
+
+
