@@ -1,0 +1,34 @@
+22:10:26 **** Incremental Build of configuration Debug for project Lesson 4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Stm32_F103C6_Drivers/inc" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/HAL/includes" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:30:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Src/main.c: In function 'main':
+../Src/main.c:44:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+arm-none-eabi-gcc -o "Lesson 4.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson 4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson 4.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson\ 4.elf  > "Lesson 4.list"
+arm-none-eabi-objcopy  -O binary  Lesson\ 4.elf  "Lesson 4.bin"
+arm-none-eabi-size   Lesson\ 4.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson 4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson 4.bin
+Finished building: Lesson 4.list
+ 
+ 
+
+22:10:27 Build Finished. 0 errors, 4 warnings. (took 738ms)
+

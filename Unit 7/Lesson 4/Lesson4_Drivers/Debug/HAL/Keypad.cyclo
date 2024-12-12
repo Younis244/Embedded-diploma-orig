@@ -1,2 +1,0 @@
-../HAL/Keypad.c:13:6:Keypad_Init	1
-../HAL/Keypad.c:67:6:Keypad_GetChar	25

@@ -1,14 +1,1389 @@
-19:54:53 **** Incremental Build of configuration Debug for project Lesson4_Drivers ****
+18:23:27 **** Build of configuration Debug for project Lesson_EXTI_Driver ****
 make -j16 all 
-arm-none-eabi-size  Lesson4_Drivers.elf 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.d" -MT"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o"
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:15: warning: implicit declaration of function 'AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping' [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position)
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:100: error: expected ']' before ')' token
+  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position)
+                                                                                                    ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:100: error: expected ';' before ')' token
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:100: error: expected statement before ')' token
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:102: error: expected expression before '<<' token
+  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position)
+                                                                                                      ^~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:125: error: expected statement before ')' token
+  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position)
+                                                                                                                             ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:110:1: error: expected identifier or '(' before '{' token
+ {
+ ^
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Src/main.c:30:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Src/main.c: In function 'main':
+../Src/main.c:44:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG;
+                   ^~~~~~~~
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:36:35 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:15: warning: implicit declaration of function 'AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping' [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:100: error: expected ']' before ')' token
+  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                                                                                    ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:100: error: expected ';' before ')' token
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:100: error: expected statement before ')' token
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:102: error: expected expression before '<<' token
+  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                                                                                      ^~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:125: error: expected statement before ')' token
+  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                                                                                                             ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:110:1: error: expected identifier or '(' before '{' token
+ {
+ ^
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:37:59 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:15: error: 'AFIO_EXTI_AFIO_EXTICR_index' undeclared (first use in this function); did you mean 'AFIO_EXTICR_index'?
+  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+               AFIO_EXTICR_index
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:15: note: each undeclared identifier is reported only once for each function it appears in
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:20:48: error: called object is not a function or function pointer
+ #define AFIO_GPIO_EXTI_MApping(x) ( (x==GPIOA)?0\
+                                                ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:20:48: note: in definition of macro 'AFIO_GPIO_EXTI_MApping'
+ #define AFIO_GPIO_EXTI_MApping(x) ( (x==GPIOA)?0\
+                                                ^~
+           (x==GPIOB)?1\
+                                                 
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:21:22: error: called object is not a function or function pointer
+           (x==GPIOB)?1\
+                      ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:21:22: note: in definition of macro 'AFIO_GPIO_EXTI_MApping'
+           (x==GPIOB)?1\
+                      ^~
+           (x==GPIOC)?2\
+                       
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:22:22: error: called object is not a function or function pointer
+           (x==GPIOC)?2\
+                      ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:22:22: note: in definition of macro 'AFIO_GPIO_EXTI_MApping'
+           (x==GPIOC)?2\
+                      ^~
+           (x==GPIOD)?3:0 )
+                       
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:23:26: error: expected ':' before ')' token
+           (x==GPIOD)?3:0 )
+                          ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:49: note: in expansion of macro 'AFIO_GPIO_EXTI_MApping'
+  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                                 ^~~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:110:1: error: expected identifier or '(' before '{' token
+ {
+ ^
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:38:28 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:20:48: error: called object is not a function or function pointer
+ #define AFIO_GPIO_EXTI_MApping(x) ( (x==GPIOA)?0\
+                                                ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:20:48: note: in definition of macro 'AFIO_GPIO_EXTI_MApping'
+ #define AFIO_GPIO_EXTI_MApping(x) ( (x==GPIOA)?0\
+                                                ^~
+           (x==GPIOB)?1\
+                                                 
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:21:22: error: called object is not a function or function pointer
+           (x==GPIOB)?1\
+                      ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:21:22: note: in definition of macro 'AFIO_GPIO_EXTI_MApping'
+           (x==GPIOB)?1\
+                      ^~
+           (x==GPIOC)?2\
+                       
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:22:22: error: called object is not a function or function pointer
+           (x==GPIOC)?2\
+                      ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:22:22: note: in definition of macro 'AFIO_GPIO_EXTI_MApping'
+           (x==GPIOC)?2\
+                      ^~
+           (x==GPIOD)?3:0 )
+                       
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:23:26: error: expected ':' before ')' token
+           (x==GPIOD)?3:0 )
+                          ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:39: note: in expansion of macro 'AFIO_GPIO_EXTI_MApping'
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:110:1: error: expected identifier or '(' before '{' token
+ {
+ ^
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:38:57 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:20:48: error: called object is not a function or function pointer
+ #define AFIO_GPIO_EXTI_MApping(x) ( (x==GPIOA)?0\
+                                                ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:20:48: note: in definition of macro 'AFIO_GPIO_EXTI_MApping'
+ #define AFIO_GPIO_EXTI_MApping(x) ( (x==GPIOA)?0\
+                                                ^~
+           (x==GPIOB)?1\
+                                                 
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:21:22: error: called object is not a function or function pointer
+           (x==GPIOB)?1\
+                      ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:21:22: note: in definition of macro 'AFIO_GPIO_EXTI_MApping'
+           (x==GPIOB)?1\
+                      ^~
+           (x==GPIOC)?2\
+                       
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:22:22: error: called object is not a function or function pointer
+           (x==GPIOC)?2\
+                      ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:22:22: note: in definition of macro 'AFIO_GPIO_EXTI_MApping'
+           (x==GPIOC)?2\
+                      ^~
+           (x==GPIOD)?3:0 )
+                       
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:23:26: error: expected ':' before ')' token
+           (x==GPIOD)?3:0 )
+                          ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:39: note: in expansion of macro 'AFIO_GPIO_EXTI_MApping'
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:39:36 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson_EXTI_Driver.elf
+ 
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+arm-none-eabi-objdump -h -S  Lesson_EXTI_Driver.elf  > "Lesson_EXTI_Driver.list"
+arm-none-eabi-objcopy  -O binary  Lesson_EXTI_Driver.elf  "Lesson_EXTI_Driver.bin"
    text	   data	    bss	    dec	    hex	filename
-    588	      8	   1568	   2164	    874	Lesson4_Drivers.elf
+    584	      8	   1568	   2160	    870	Lesson_EXTI_Driver.elf
 Finished building: default.size.stdout
  
-18:36:21 **** Incremental Build of configuration Debug for project Lesson4_Drivers ****
+Finished building: Lesson_EXTI_Driver.bin
+ 
+Finished building: Lesson_EXTI_Driver.list
+ 
+18:40:58 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
 make -j16 all 
-arm-none-eabi-size  Lesson4_Drivers.elf 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson_EXTI_Driver.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson_EXTI_Driver.elf  > "Lesson_EXTI_Driver.list"
+arm-none-eabi-objcopy  -O binary  Lesson_EXTI_Driver.elf  "Lesson_EXTI_Driver.bin"
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
    text	   data	    bss	    dec	    hex	filename
-    588	      8	   1568	   2164	    874	Lesson4_Drivers.elf
+    584	      8	   1568	   2160	    870	Lesson_EXTI_Driver.elf
 Finished building: default.size.stdout
+ 
+Finished building: Lesson_EXTI_Driver.bin
+Finished building: Lesson_EXTI_Driver.list
+ 
+ 
+19:20:35 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Enable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:49:3: error: 'NVIC_IRQ6_EXTI1_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI0_Enable'?
+   NVIC_IRQ6_EXTI1_Enable;
+   ^~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI0_Enable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:49:3: note: each undeclared identifier is reported only once for each function it appears in
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:52:3: error: 'NVIC_IRQ6_EXTI2_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI1_Enable'?
+   NVIC_IRQ6_EXTI2_Enable;
+   ^~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI1_Enable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:55:3: error: 'NVIC_IRQ6_EXTI3_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI2_Enable'?
+   NVIC_IRQ6_EXTI3_Enable;
+   ^~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI2_Enable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:58:3: error: 'NVIC_IRQ6_EXTI4_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI3_Enable'?
+   NVIC_IRQ6_EXTI4_Enable;
+   ^~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI3_Enable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Disable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:86:3: error: 'NVIC_IRQ6_EXTI1_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ7_EXTI1_Disable'?
+   NVIC_IRQ6_EXTI1_Disable;
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ7_EXTI1_Disable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:89:3: error: 'NVIC_IRQ6_EXTI2_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI1_Disable'?
+   NVIC_IRQ6_EXTI2_Disable;
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI1_Disable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:92:3: error: 'NVIC_IRQ6_EXTI3_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI2_Disable'?
+   NVIC_IRQ6_EXTI3_Disable;
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI2_Disable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:95:3: error: 'NVIC_IRQ6_EXTI4_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI3_Disable'?
+   NVIC_IRQ6_EXTI4_Disable;
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI3_Disable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:136:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Disable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:305:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:297:6: warning: 'EXTI15_10_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI15_10_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:288:6: warning: 'EXTI9_5_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI9_5_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:280:6: warning: 'EXTI4_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI4_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:272:6: warning: 'EXTI3_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI3_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:264:6: warning: 'EXTI2_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI2_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:256:6: warning: 'EXTI1_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI1_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:248:6: warning: 'EXTI0_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI0_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:234:6: warning: 'MCAL_EXTI_GPIO_Update' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)//Converting from rising to falling and vice versa
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:204:6: warning: 'MCAL_EXTI_GPIO_DeInit' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_DeInit(void)
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:193:6: warning: 'MCAL_EXTI_GPIO_Init' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:21:20 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Enable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:50:3: error: 'NVIC_IRQ6_EXTI1_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI0_Enable'?
+   NVIC_IRQ6_EXTI1_Enable;
+   ^~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI0_Enable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:50:3: note: each undeclared identifier is reported only once for each function it appears in
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:53:3: error: 'NVIC_IRQ6_EXTI2_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI1_Enable'?
+   NVIC_IRQ6_EXTI2_Enable;
+   ^~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI1_Enable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:56:3: error: 'NVIC_IRQ6_EXTI3_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI2_Enable'?
+   NVIC_IRQ6_EXTI3_Enable;
+   ^~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI2_Enable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:59:3: error: 'NVIC_IRQ6_EXTI4_Enable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI3_Enable'?
+   NVIC_IRQ6_EXTI4_Enable;
+   ^~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI3_Enable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Disable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:87:3: error: 'NVIC_IRQ6_EXTI1_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ7_EXTI1_Disable'?
+   NVIC_IRQ6_EXTI1_Disable;
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ7_EXTI1_Disable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:90:3: error: 'NVIC_IRQ6_EXTI2_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI1_Disable'?
+   NVIC_IRQ6_EXTI2_Disable;
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI1_Disable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:93:3: error: 'NVIC_IRQ6_EXTI3_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI2_Disable'?
+   NVIC_IRQ6_EXTI3_Disable;
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI2_Disable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:96:3: error: 'NVIC_IRQ6_EXTI4_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI3_Disable'?
+   NVIC_IRQ6_EXTI4_Disable;
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   NVIC_IRQ6_EXTI3_Disable
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:137:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Disable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:306:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:298:6: warning: 'EXTI15_10_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI15_10_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:289:6: warning: 'EXTI9_5_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI9_5_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:281:6: warning: 'EXTI4_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI4_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:273:6: warning: 'EXTI3_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI3_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:265:6: warning: 'EXTI2_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI2_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:257:6: warning: 'EXTI1_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI1_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:249:6: warning: 'EXTI0_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI0_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:235:6: warning: 'MCAL_EXTI_GPIO_Update' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)//Converting from rising to falling and vice versa
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:205:6: warning: 'MCAL_EXTI_GPIO_DeInit' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_DeInit(void)
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:194:6: warning: 'MCAL_EXTI_GPIO_Init' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:22:33 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:136:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Disable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:305:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:297:6: warning: 'EXTI15_10_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI15_10_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:288:6: warning: 'EXTI9_5_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI9_5_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:280:6: warning: 'EXTI4_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI4_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:272:6: warning: 'EXTI3_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI3_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:264:6: warning: 'EXTI2_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI2_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:256:6: warning: 'EXTI1_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI1_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:248:6: warning: 'EXTI0_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI0_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:234:6: warning: 'MCAL_EXTI_GPIO_Update' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)//Converting from rising to falling and vice versa
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:204:6: warning: 'MCAL_EXTI_GPIO_DeInit' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_DeInit(void)
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:193:6: warning: 'MCAL_EXTI_GPIO_Init' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:24:25 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:136:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Disable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:305:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:297:6: warning: 'EXTI15_10_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI15_10_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:288:6: warning: 'EXTI9_5_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI9_5_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:280:6: warning: 'EXTI4_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI4_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:272:6: warning: 'EXTI3_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI3_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:264:6: warning: 'EXTI2_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI2_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:256:6: warning: 'EXTI1_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI1_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:248:6: warning: 'EXTI0_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI0_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:234:6: warning: 'MCAL_EXTI_GPIO_Update' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)//Converting from rising to falling and vice versa
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:204:6: warning: 'MCAL_EXTI_GPIO_DeInit' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_DeInit(void)
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:193:6: warning: 'MCAL_EXTI_GPIO_Init' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:25:56 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:136:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Disable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:305:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:297:6: warning: 'EXTI15_10_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI15_10_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:288:6: warning: 'EXTI9_5_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI9_5_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:280:6: warning: 'EXTI4_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI4_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:272:6: warning: 'EXTI3_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI3_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:264:6: warning: 'EXTI2_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI2_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:256:6: warning: 'EXTI1_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI1_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:248:6: warning: 'EXTI0_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI0_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:234:6: warning: 'MCAL_EXTI_GPIO_Update' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)//Converting from rising to falling and vice versa
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:204:6: warning: 'MCAL_EXTI_GPIO_DeInit' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_DeInit(void)
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:193:6: warning: 'MCAL_EXTI_GPIO_Init' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:25:57 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:136:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Disable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:305:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:297:6: warning: 'EXTI15_10_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI15_10_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:288:6: warning: 'EXTI9_5_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI9_5_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:280:6: warning: 'EXTI4_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI4_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:272:6: warning: 'EXTI3_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI3_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:264:6: warning: 'EXTI2_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI2_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:256:6: warning: 'EXTI1_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI1_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:248:6: warning: 'EXTI0_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI0_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:234:6: warning: 'MCAL_EXTI_GPIO_Update' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)//Converting from rising to falling and vice versa
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:204:6: warning: 'MCAL_EXTI_GPIO_DeInit' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_DeInit(void)
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:193:6: warning: 'MCAL_EXTI_GPIO_Init' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:26:12 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:136:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:297:6: warning: 'EXTI15_10_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI15_10_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:288:6: warning: 'EXTI9_5_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI9_5_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:280:6: warning: 'EXTI4_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI4_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:272:6: warning: 'EXTI3_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI3_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:264:6: warning: 'EXTI2_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI2_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:256:6: warning: 'EXTI1_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI1_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:248:6: warning: 'EXTI0_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI0_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:234:6: warning: 'MCAL_EXTI_GPIO_Update' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)//Converting from rising to falling and vice versa
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:204:6: warning: 'MCAL_EXTI_GPIO_DeInit' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_DeInit(void)
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:193:6: warning: 'MCAL_EXTI_GPIO_Init' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+      ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson_EXTI_Driver.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson_EXTI_Driver.elf  > "Lesson_EXTI_Driver.list"
+arm-none-eabi-objcopy  -O binary  Lesson_EXTI_Driver.elf  "Lesson_EXTI_Driver.bin"
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson_EXTI_Driver.elf
+Finished building: Lesson_EXTI_Driver.list
+Finished building: Lesson_EXTI_Driver.bin
+Finished building: default.size.stdout
+ 
+ 
+ 
+19:27:26 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:136:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Disable_NVIC':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:304:2: error: expected declaration or statement at end of input
+  if(EXTI->PR & 1<<15) {EXTI->PR |= 1<<15;  GPtr_IRQ_CallBack[15]();}}
+  ^~
+At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:297:6: warning: 'EXTI15_10_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI15_10_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:288:6: warning: 'EXTI9_5_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI9_5_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:280:6: warning: 'EXTI4_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI4_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:272:6: warning: 'EXTI3_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI3_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:264:6: warning: 'EXTI2_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI2_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:256:6: warning: 'EXTI1_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI1_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:248:6: warning: 'EXTI0_IRQHandler' defined but not used [-Wunused-function]
+ void EXTI0_IRQHandler (void)
+      ^~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:234:6: warning: 'MCAL_EXTI_GPIO_Update' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)//Converting from rising to falling and vice versa
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:204:6: warning: 'MCAL_EXTI_GPIO_DeInit' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_DeInit(void)
+      ^~~~~~~~~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:193:6: warning: 'MCAL_EXTI_GPIO_Init' defined but not used [-Wunused-function]
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:28:20 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:137:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: At top level:
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:306:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:28:27 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:137:39: warning: implicit declaration of function 'AFIO_GPIO_EXTI_MApping'; did you mean 'AFIO_GPIO_EXTI_Mapping'? [-Wimplicit-function-declaration]
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+                                       AFIO_GPIO_EXTI_Mapping
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson_EXTI_Driver.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson_EXTI_Driver.elf  > "Lesson_EXTI_Driver.list"
+arm-none-eabi-objcopy  -O binary  Lesson_EXTI_Driver.elf  "Lesson_EXTI_Driver.bin"
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1128	      8	   1624	   2760	    ac8	Lesson_EXTI_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson_EXTI_Driver.bin
+Finished building: Lesson_EXTI_Driver.list
+ 
+ 
+19:28:29 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1128	      8	   1624	   2760	    ac8	Lesson_EXTI_Driver.elf
+Finished building: default.size.stdout
+ 
+20:15:53 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1128	      8	   1624	   2760	    ac8	Lesson_EXTI_Driver.elf
+Finished building: default.size.stdout
+ 
+20:24:00 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:30:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `EXTI9_Callback':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:48: undefined reference to `LCD_Write_String'
+Src/main.o: In function `main':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:59: undefined reference to `LCD_Init'
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:60: undefined reference to `LCD_Clear_Screen'
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:76: undefined reference to `LCD_Clear_Screen'
+Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o: In function `Update_EXTI':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:137: undefined reference to `AFIO_GPIO_EXTI_MApping'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:51: Lesson_EXTI_Driver.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:24:45 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:30:48: error: called object is not a function or function pointer
+ #define AFIO_GPIO_EXTI_Mapping(x) ( (x==GPIOA)?0\
+                                                ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:30:48: note: in definition of macro 'AFIO_GPIO_EXTI_Mapping'
+ #define AFIO_GPIO_EXTI_Mapping(x) ( (x==GPIOA)?0\
+                                                ^~
+           (x==GPIOB)?1\
+                                                 
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:31:22: error: called object is not a function or function pointer
+           (x==GPIOB)?1\
+                      ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:31:22: note: in definition of macro 'AFIO_GPIO_EXTI_Mapping'
+           (x==GPIOB)?1\
+                      ^~
+           (x==GPIOC)?2\
+                       
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:32:22: error: called object is not a function or function pointer
+           (x==GPIOC)?2\
+                      ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:32:22: note: in definition of macro 'AFIO_GPIO_EXTI_Mapping'
+           (x==GPIOC)?2\
+                      ^~
+           (x==GPIOD)?3:0 )
+                       
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:33:26: error: expected ':' before ')' token
+           (x==GPIOD)?3:0 )
+                          ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:137:39: note: in expansion of macro 'AFIO_GPIO_EXTI_Mapping'
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_Mapping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:24:55 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:30:48: error: called object is not a function or function pointer
+ #define AFIO_GPIO_EXTI_Mapping(x) ( (x==GPIOA)?0\
+                                                ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:30:48: note: in definition of macro 'AFIO_GPIO_EXTI_Mapping'
+ #define AFIO_GPIO_EXTI_Mapping(x) ( (x==GPIOA)?0\
+                                                ^~
+           (x==GPIOB)?1\
+                                                 
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:31:22: error: called object is not a function or function pointer
+           (x==GPIOB)?1\
+                      ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:31:22: note: in definition of macro 'AFIO_GPIO_EXTI_Mapping'
+           (x==GPIOB)?1\
+                      ^~
+           (x==GPIOC)?2\
+                       
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:32:22: error: called object is not a function or function pointer
+           (x==GPIOC)?2\
+                      ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:32:22: note: in definition of macro 'AFIO_GPIO_EXTI_Mapping'
+           (x==GPIOC)?2\
+                      ^~
+           (x==GPIOD)?3:0 )
+                       
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:33:26: error: expected ':' before ')' token
+           (x==GPIOD)?3:0 )
+                          ^
+../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:137:39: note: in expansion of macro 'AFIO_GPIO_EXTI_Mapping'
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_Mapping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position);
+                                       ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:26:28 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `EXTI9_Callback':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:48: undefined reference to `LCD_Write_String'
+Src/main.o: In function `main':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:59: undefined reference to `LCD_Init'
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:60: undefined reference to `LCD_Clear_Screen'
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:76: undefined reference to `LCD_Clear_Screen'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:51: Lesson_EXTI_Driver.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:28:05 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:30:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../Src/main.c: In function 'EXTI9_Callback':
+../Src/main.c:48:2: warning: implicit declaration of function 'LCD_Write_String' [-Wimplicit-function-declaration]
+  LCD_Write_String("IRQ EXTI9 is happened _|- ");
+  ^~~~~~~~~~~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:59:2: warning: implicit declaration of function 'LCD_Init' [-Wimplicit-function-declaration]
+  LCD_Init();
+  ^~~~~~~~
+../Src/main.c:60:2: warning: implicit declaration of function 'LCD_Clear_Screen' [-Wimplicit-function-declaration]
+  LCD_Clear_Screen();
+  ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `EXTI9_Callback':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:48: undefined reference to `LCD_Write_String'
+Src/main.o: In function `main':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:59: undefined reference to `LCD_Init'
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:60: undefined reference to `LCD_Clear_Screen'
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:76: undefined reference to `LCD_Clear_Screen'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:51: Lesson_EXTI_Driver.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:28:08 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:30:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `EXTI9_Callback':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:48: undefined reference to `LCD_Write_String'
+Src/main.o: In function `main':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:59: undefined reference to `LCD_Init'
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:60: undefined reference to `LCD_Clear_Screen'
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../Src/main.c:76: undefined reference to `LCD_Clear_Screen'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:51: Lesson_EXTI_Driver.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:29:18 **** Clean-only build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 clean 
+rm -rf *
+ 
+20:29:19 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.d" -MT"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o"
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+arm-none-eabi-gcc "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../HAL/LCD.c: In function 'LCD_En_Kick':
+../HAL/LCD.c:31:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  my_wait(50);// using Enable Cycle time in Bus timing characteristics in data sheet
+  ^~~~~~~
+In file included from ../Src/main.c:30:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+HAL/LCD.o: In function `LCD_Init':
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Debug/../HAL/LCD.c:144: undefined reference to `PinCnfg'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:52: Lesson_EXTI_Driver.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:30:03 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+../HAL/LCD.c: In function 'LCD_En_Kick':
+../HAL/LCD.c:31:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  my_wait(50);// using Enable Cycle time in Bus timing characteristics in data sheet
+  ^~~~~~~
+In file included from ../Src/main.c:30:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson_EXTI_Driver.elf
+ 
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+arm-none-eabi-objdump -h -S  Lesson_EXTI_Driver.elf  > "Lesson_EXTI_Driver.list"
+arm-none-eabi-objcopy  -O binary  Lesson_EXTI_Driver.elf  "Lesson_EXTI_Driver.bin"
+   text	   data	    bss	    dec	    hex	filename
+   3392	     24	   1632	   5048	   13b8	Lesson_EXTI_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson_EXTI_Driver.bin
+Finished building: Lesson_EXTI_Driver.list
+ 
+ 
+20:30:06 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3392	     24	   1632	   5048	   13b8	Lesson_EXTI_Driver.elf
+Finished building: default.size.stdout
+ 
+20:30:18 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+../HAL/LCD.c: In function 'LCD_En_Kick':
+../HAL/LCD.c:33:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  my_wait(50);// using Enable Cycle time in Bus timing characteristics in data sheet
+  ^~~~~~~
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson_EXTI_Driver.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson_EXTI_Driver.elf  > "Lesson_EXTI_Driver.list"
+arm-none-eabi-objcopy  -O binary  Lesson_EXTI_Driver.elf  "Lesson_EXTI_Driver.bin"
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3392	     24	   1632	   5048	   13b8	Lesson_EXTI_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson_EXTI_Driver.bin
+Finished building: Lesson_EXTI_Driver.list
+ 
+ 
+20:47:53 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson_EXTI_Driver.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson_EXTI_Driver.elf  > "Lesson_EXTI_Driver.list"
+arm-none-eabi-objcopy  -O binary  Lesson_EXTI_Driver.elf  "Lesson_EXTI_Driver.bin"
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3384	     24	   1632	   5040	   13b0	Lesson_EXTI_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson_EXTI_Driver.bin
+Finished building: Lesson_EXTI_Driver.list
+ 
+ 
+20:50:31 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi--gdwarf-2 "../Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.d" -MT"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o"
+arm-none-eabi--gdwarf-2 "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+arm-none-eabi--gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi--gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi--gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi--gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi--gdwarf-2: not found
+arm-none-eabi--gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi--gdwarf-2: not found
+make: *** [Stm32_F103C6_Drivers/GPIO/subdir.mk:18: Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o] Error 127
+make: *** Waiting for unfinished jobs....
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi--gdwarf-2: not found
+make: *** [Src/subdir.mk:24: Src/main.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi--gdwarf-2: not found
+make: *** [Src/subdir.mk:26: Src/syscalls.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi--gdwarf-2: not found
+make: *** [Src/subdir.mk:28: Src/sysmem.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi--gdwarf-2: not found
+make: *** [HAL/subdir.mk:21: HAL/Keypad.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi--gdwarf-2: not found
+make: *** [HAL/subdir.mk:23: HAL/LCD.o] Error 127
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:50:46 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc-gdwarf-2 "../Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.d" -MT"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o"
+arm-none-eabi-gcc-gdwarf-2 "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+arm-none-eabi-gcc-gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc-gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc-gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc-gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+arm-none-eabi-gcc-gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [Stm32_F103C6_Drivers/GPIO/subdir.mk:18: Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o] Error 127
+make: *** Waiting for unfinished jobs....
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [Src/subdir.mk:24: Src/main.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [Src/subdir.mk:26: Src/syscalls.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [Src/subdir.mk:28: Src/sysmem.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [HAL/subdir.mk:21: HAL/Keypad.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [HAL/subdir.mk:23: HAL/LCD.o] Error 127
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:51:07 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc-gdwarf-2 "../Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.d" -MT"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o"
+arm-none-eabi-gcc-gdwarf-2 "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+arm-none-eabi-gcc-gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc-gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc-gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc-gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+arm-none-eabi-gcc-gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [Stm32_F103C6_Drivers/GPIO/subdir.mk:18: Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o] Error 127
+make: *** Waiting for unfinished jobs....
+make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [Startup/subdir.mk:18: Startup/startup_stm32f103c6tx.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [Src/subdir.mk:24: Src/main.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [Src/subdir.mk:26: Src/syscalls.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [Src/subdir.mk:28: Src/sysmem.o] Error 127
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [HAL/subdir.mk:21: HAL/Keypad.o] Error 127
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:51:26 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.d" -MT"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o"
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+arm-none-eabi-gcc "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../HAL/LCD.c: In function 'LCD_En_Kick':
+../HAL/LCD.c:33:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  my_wait(50);// using Enable Cycle time in Bus timing characteristics in data sheet
+  ^~~~~~~
+In file included from ../Src/main.c:30:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson_EXTI_Driver.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson_EXTI_Driver.elf  > "Lesson_EXTI_Driver.list"
+arm-none-eabi-objcopy  -O binary  Lesson_EXTI_Driver.elf  "Lesson_EXTI_Driver.bin"
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3384	     24	   1632	   5040	   13b0	Lesson_EXTI_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson_EXTI_Driver.bin
+Finished building: Lesson_EXTI_Driver.list
+ 
+ 
+20:57:14 **** Incremental Build of configuration Debug for project Lesson_EXTI_Driver ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.d" -MT"Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/GPIO/Stm32_F103C6_gpio_drivers.o"
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad.d" -MT"HAL/Keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/HAL/includes" -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD.d" -MT"HAL/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD.o"
+In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+../HAL/LCD.c: In function 'LCD_En_Kick':
+../HAL/LCD.c:33:2: warning: implicit declaration of function 'my_wait' [-Wimplicit-function-declaration]
+  my_wait(50);// using Enable Cycle time in Bus timing characteristics in data sheet
+  ^~~~~~~
+In file included from ../Src/main.c:30:0:
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
+ ^
+C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 7/Lesson 4/Lesson_EXTI_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
+ ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
+ ^
+arm-none-eabi-gcc -o "Lesson_EXTI_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\Lesson_EXTI_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson_EXTI_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson_EXTI_Driver.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson_EXTI_Driver.elf  > "Lesson_EXTI_Driver.list"
+arm-none-eabi-objcopy  -O binary  Lesson_EXTI_Driver.elf  "Lesson_EXTI_Driver.bin"
+arm-none-eabi-size   Lesson_EXTI_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3384	     24	   1632	   5040	   13b0	Lesson_EXTI_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson_EXTI_Driver.bin
+Finished building: Lesson_EXTI_Driver.list
+ 
  

@@ -1,385 +1,296 @@
-!SESSION 2024-09-23 14:57:53.200 -----------------------------------------------
-eclipse.buildId=Version 1.4.0
-java.version=1.8.0_252
-java.vendor=AdoptOpenJDK
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-23 14:58:03.125
-!MESSAGE Log4j initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\.metadata\.log4j.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-23 14:58:05.721
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-09-23 14:58:06.363
-!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
-
-!ENTRY org.eclipse.cdt.core 1 0 2024-09-23 15:00:32.263
-!MESSAGE Indexed 'Lesson4_Drivers' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2024-09-23 15:00:35.339
-!MESSAGE Indexed 'Lesson4_Drivers' (2 sources, 52 headers) in 0.434 sec: 1,931 declarations; 2,741 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.043%)
-!SESSION 2024-09-23 15:02:29.344 -----------------------------------------------
-eclipse.buildId=Version 1.4.0
-java.version=1.8.0_252
-java.vendor=AdoptOpenJDK
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-23 15:02:32.884
-!MESSAGE Log4j initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\.metadata\.log4j.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-23 15:02:36.475
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-09-23 15:02:37.104
-!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.759
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.760
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.760
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.760
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.761
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.761
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.762
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.762
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.762
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.763
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.793
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.793
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.794
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.794
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.795
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.795
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.796
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.796
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.797
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.797
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.799
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.800
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.800
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.800
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.801
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.801
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.802
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.802
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.802
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.803
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.805
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.805
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.806
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.806
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.807
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.807
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.807
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.808
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.808
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.808
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.810
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.810
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.811
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.811
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.812
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.812
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.812
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.813
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.813
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.814
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.826
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.827
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.827
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.828
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.828
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.828
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.829
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.829
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.829
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.830
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.873
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.873
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.874
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.874
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.875
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.875
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.875
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.876
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.876
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.877
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.906
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.906
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.907
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.907
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.908
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.908
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.909
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.909
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.910
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.910
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.922
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.922
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.923
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.923
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.924
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.924
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.925
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.926
-!MESSAGE Falling back to default toolchain
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-09-23 15:04:26.926
-!MESSAGE Type or version is empty: ; 
-
-!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-09-23 15:04:26.927
-!MESSAGE Falling back to default toolchain
-
-!ENTRY org.eclipse.cdt.core 1 0 2024-09-23 15:05:12.353
-!MESSAGE Indexed 'Lesson4_Drivers' (5 sources, 56 headers) in 0.368 sec: 2,048 declarations; 3,322 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.037%)
-
-!ENTRY org.eclipse.jface 2 0 2024-09-24 14:12:13.808
-!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
-!STACK 0
-java.lang.RuntimeException
-	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
-	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
-	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
-	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1965)
-	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
-	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
-	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
-	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1609)
-	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-!SESSION 2024-11-23 13:14:25.422 -----------------------------------------------
+!SESSION 2024-12-12 18:18:53.783 -----------------------------------------------
 eclipse.buildId=Version 1.4.0
 java.version=1.8.0_252
 java.vendor=AdoptOpenJDK
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
-!ENTRY org.eclipse.core.resources 2 10035 2024-11-23 13:14:35.840
-!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-23 13:14:41.054
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-12-12 18:19:02.944
 !MESSAGE Log4j initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\.metadata\.log4j.xml
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-23 13:14:47.908
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-12-12 18:19:05.573
 !MESSAGE Started RMI Server, listening on port 41337
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-11-23 13:14:48.478
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-12-12 18:19:06.183
 !MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
 
-!ENTRY org.eclipse.jface 2 0 2024-11-23 14:03:32.719
-!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
-!STACK 0
-java.lang.RuntimeException
-	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
-	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
-	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
-	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1965)
-	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
-	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
-	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
-	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1609)
-	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-!SESSION 2024-11-23 18:32:36.182 -----------------------------------------------
-eclipse.buildId=Version 1.4.0
-java.version=1.8.0_252
-java.vendor=AdoptOpenJDK
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-12 18:20:47.660
+!MESSAGE Indexed 'Lesson_EXTI_Driver' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-23 18:32:41.924
-!MESSAGE Log4j initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\.metadata\.log4j.xml
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-12 18:20:51.082
+!MESSAGE Indexed 'Lesson_EXTI_Driver' (2 sources, 0 headers) in 0.069 sec: 67 declarations; 43 references; 10 unresolved inclusions; 0 syntax errors; 24 unresolved names (18%)
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-23 18:32:45.765
-!MESSAGE Started RMI Server, listening on port 41337
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.236
+!MESSAGE Type or version is empty: ; 
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2024-11-23 18:32:46.374
-!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.237
+!MESSAGE Falling back to default toolchain
 
-!ENTRY org.eclipse.jface 2 0 2024-11-23 18:35:26.174
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.237
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.239
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.239
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.240
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.240
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.241
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.242
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.242
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.275
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.276
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.276
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.277
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.278
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.278
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.280
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.280
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.281
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.282
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.285
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.286
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.286
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.287
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.288
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.289
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.289
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.290
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.290
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.291
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.294
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.294
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.295
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.295
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.296
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.296
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.297
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.297
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.298
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.299
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.300
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.301
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.302
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.303
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.303
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.304
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.305
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.305
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.306
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.307
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.323
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.323
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.324
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.325
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.325
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.326
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.326
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.327
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.327
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.328
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.414
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.414
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.415
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.415
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.415
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.416
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.416
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.417
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.417
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.418
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.461
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.462
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.462
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.463
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.463
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.464
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.464
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.464
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.465
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.466
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.488
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.488
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.489
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.490
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.490
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.491
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.492
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.492
+!MESSAGE Falling back to default toolchain
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-12-12 18:22:33.493
+!MESSAGE Type or version is empty: ; 
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 2 2 2024-12-12 18:22:33.494
+!MESSAGE Falling back to default toolchain
+
+!ENTRY org.eclipse.jface 2 0 2024-12-12 18:36:37.137
 !MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
 !STACK 0
 java.lang.RuntimeException
@@ -398,198 +309,34 @@ java.lang.RuntimeException
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
 
-!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2024-11-23 18:47:11.672
-!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\Younis\AppData\Local\Temp\STM32CubeIDE_326b3d71cfc0_c0a86402fd06
-
-!ENTRY org.eclipse.equinox.p2.metadata.repository 4 0 2024-11-23 18:47:22.018
-!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.metadata.repository.simpleRepository
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-12 20:50:29.225
+!MESSAGE Error: Cannot run program "arm-none-eabi--gdwarf-2": Launching failed
 !STACK 0
-java.lang.NullPointerException
-	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:187)
-	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:250)
-	at org.eclipse.ecf.internal.provider.filetransfer.httpclient45.Activator.getHttpClientFactory(Activator.java:239)
-	at org.eclipse.ecf.internal.provider.filetransfer.httpclient45.Activator.getBrowseHttpClient(Activator.java:264)
-	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientBrowseFileTransferFactory$1.sendBrowseRequest(HttpClientBrowseFileTransferFactory.java:57)
-	at org.eclipse.ecf.provider.filetransfer.browse.MultiProtocolFileSystemBrowserAdapter.sendBrowseRequest(MultiProtocolFileSystemBrowserAdapter.java:95)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.sendBrowseRequest(FileInfoReader.java:184)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:109)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:125)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:130)
-	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:249)
-	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:229)
-	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:69)
-	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:89)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:775)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:676)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
-	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:171)
-	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:113)
-	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:775)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:676)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
-	at org.eclipse.equinox.p2.engine.ProvisioningContext.loadMetadataRepository(ProvisioningContext.java:233)
-	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedMetadataRepositories(ProvisioningContext.java:211)
-	at org.eclipse.equinox.p2.engine.ProvisioningContext.getMetadata(ProvisioningContext.java:299)
-	at org.eclipse.equinox.internal.p2.director.SimplePlanner.updatesFor(SimplePlanner.java:1000)
-	at org.eclipse.equinox.p2.operations.UpdateOperation.updatesFor(UpdateOperation.java:144)
-	at org.eclipse.equinox.p2.operations.UpdateOperation.computeProfileChangeRequest(UpdateOperation.java:179)
-	at org.eclipse.equinox.p2.operations.UpdateOperation.lambda$0(UpdateOperation.java:314)
-	at org.eclipse.equinox.internal.p2.operations.SearchForUpdatesResolutionJob.runModal(SearchForUpdatesResolutionJob.java:41)
-	at org.eclipse.equinox.p2.operations.ProfileChangeOperation.resolveModal(ProfileChangeOperation.java:118)
-	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:112)
-	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:91)
-	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater$2.run(AutomaticUpdater.java:349)
+java.io.IOException: Cannot run program "arm-none-eabi--gdwarf-2": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:211)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:801)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:726)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:591)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:517)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.equinox.p2.core 4 0 2024-11-23 18:47:22.019
-!MESSAGE Provisioning exception
-!STACK 1
-org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://sw-center.st.com/stm32cubeide/updatesite1/1.0.1.
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:396)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:700)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
-	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:171)
-	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:113)
-	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:124)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:775)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:676)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
-	at org.eclipse.equinox.p2.engine.ProvisioningContext.loadMetadataRepository(ProvisioningContext.java:233)
-	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedMetadataRepositories(ProvisioningContext.java:211)
-	at org.eclipse.equinox.p2.engine.ProvisioningContext.getMetadata(ProvisioningContext.java:299)
-	at org.eclipse.equinox.internal.p2.director.SimplePlanner.updatesFor(SimplePlanner.java:1000)
-	at org.eclipse.equinox.p2.operations.UpdateOperation.updatesFor(UpdateOperation.java:144)
-	at org.eclipse.equinox.p2.operations.UpdateOperation.computeProfileChangeRequest(UpdateOperation.java:179)
-	at org.eclipse.equinox.p2.operations.UpdateOperation.lambda$0(UpdateOperation.java:314)
-	at org.eclipse.equinox.internal.p2.operations.SearchForUpdatesResolutionJob.runModal(SearchForUpdatesResolutionJob.java:41)
-	at org.eclipse.equinox.p2.operations.ProfileChangeOperation.resolveModal(ProfileChangeOperation.java:118)
-	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:112)
-	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:91)
-	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater$2.run(AutomaticUpdater.java:349)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2024-11-23 18:47:22.020
-!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/updatesite1/1.0.1.
-
-!ENTRY org.eclipse.core.jobs 4 2 2024-11-23 18:47:22.022
-!MESSAGE An internal error occurred during: "Update validate job".
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-12 20:50:45.189
+!MESSAGE Error: Cannot run program "arm-none-eabi-gcc-gdwarf-2": Launching failed
 !STACK 0
-java.lang.NullPointerException
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.handleRemoteIndexFile(AbstractRepositoryManager.java:729)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:723)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:665)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
-	at org.eclipse.equinox.p2.engine.ProvisioningContext.loadMetadataRepository(ProvisioningContext.java:233)
-	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedMetadataRepositories(ProvisioningContext.java:211)
-	at org.eclipse.equinox.p2.engine.ProvisioningContext.getMetadata(ProvisioningContext.java:299)
-	at org.eclipse.equinox.internal.p2.director.SimplePlanner.updatesFor(SimplePlanner.java:1000)
-	at org.eclipse.equinox.p2.operations.UpdateOperation.updatesFor(UpdateOperation.java:144)
-	at org.eclipse.equinox.p2.operations.UpdateOperation.computeProfileChangeRequest(UpdateOperation.java:179)
-	at org.eclipse.equinox.p2.operations.UpdateOperation.lambda$0(UpdateOperation.java:314)
-	at org.eclipse.equinox.internal.p2.operations.SearchForUpdatesResolutionJob.runModal(SearchForUpdatesResolutionJob.java:41)
-	at org.eclipse.equinox.p2.operations.ProfileChangeOperation.resolveModal(ProfileChangeOperation.java:118)
-	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:112)
-	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:91)
-	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater$2.run(AutomaticUpdater.java:349)
+java.io.IOException: Cannot run program "arm-none-eabi-gcc-gdwarf-2": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:211)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:274)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:801)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:726)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:591)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:517)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SESSION 2024-11-23 18:47:23.795 -----------------------------------------------
-eclipse.buildId=Version 1.16.1
-java.version=17.0.11
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-23 18:47:42.079
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-23 18:47:42.087
-!MESSAGE Log4j2 initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\.metadata\.log4j2.xml
-
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-11-23 18:47:47.029
-!MESSAGE Removing PartDescriptorImpl with the "com.st.stm32cube.ide.mcu.debug.swv.core.DTWExceptionEvent" id and the "SWV Exception Timeline Graph" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
-
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-11-23 18:47:47.035
-!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.rse.shells.ui.view.commandsView" id and the "Remote Shell" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
-
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-11-23 18:47:47.037
-!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.rse.ui.view.systemView" id and the "Remote Systems" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
-
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-11-23 18:47:47.037
-!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.rse.ui.view.teamView" id and the "Team" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
-
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-11-23 18:47:47.037
-!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.rse.ui.view.systemTableView" id and the "Remote System Details" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
-
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-11-23 18:47:47.038
-!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.rse.ui.view.SystemSearchView" id and the "Remote Search" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
-
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-11-23 18:47:47.038
-!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.rse.ui.view.scratchpad.SystemScratchpadViewPart" id and the "Remote Scratchpad" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
-
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-11-23 18:47:47.039
-!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.rse.ui.view.monitorView" id and the "Remote Monitor" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
-
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-11-23 18:47:47.040
-!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.search.SearchResultView" id and the "Classic Search" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
-
-!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-11-23 18:47:47.043
-!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.ui.views.ResourceNavigator" id and the "Navigator (Deprecated)" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-23 18:47:50.802
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.cdt.core 1 0 2024-11-23 18:47:50.936
-!MESSAGE Indexed 'Lesson4_Drivers' (5 sources, 58 headers) in 2.2 sec: 2,086 declarations; 3,416 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.036%)
-!SESSION 2024-11-23 19:01:00.386 -----------------------------------------------
-eclipse.buildId=Version 1.16.1
-java.version=17.0.11
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-23 19:01:07.358
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-23 19:01:07.360
-!MESSAGE Log4j2 initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-23 19:01:13.777
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2024-11-23 19:34:13.998 -----------------------------------------------
-eclipse.buildId=Version 1.16.1
-java.version=17.0.11
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-23 19:34:19.242
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-23 19:34:19.243
-!MESSAGE Log4j2 initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-23 19:34:25.391
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2024-11-23 19:47:36.715 -----------------------------------------------
-eclipse.buildId=Version 1.16.1
-java.version=17.0.11
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-23 19:47:43.875
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-23 19:47:43.877
-!MESSAGE Log4j2 initialized with config file C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 7\Lesson 4\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-23 19:47:50.609
-!MESSAGE Started RMI Server, listening on port 41337
