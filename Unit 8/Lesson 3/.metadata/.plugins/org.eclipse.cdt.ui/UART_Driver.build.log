@@ -1,30 +1,6 @@
-20:27:17 **** Incremental Build of configuration Debug for project UART_Driver ****
+22:14:41 **** Incremental Build of configuration Debug for project UART_Driver ****
 make -j16 all 
 arm-none-eabi-gcc "../Stm32_F103C6_Drivers/RCC/Stm32_F103C6_RCC_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 8/Lesson 3/UART_Driver/Stm32_F103C6_Drivers/inc" -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 8/Lesson 3/UART_Driver/HAL/includes" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/RCC/Stm32_F103C6_RCC_drivers.d" -MT"Stm32_F103C6_Drivers/RCC/Stm32_F103C6_RCC_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/RCC/Stm32_F103C6_RCC_drivers.o"
-arm-none-eabi-gcc "../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 8/Lesson 3/UART_Driver/Stm32_F103C6_Drivers/inc" -I../Inc -I"C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 8/Lesson 3/UART_Driver/HAL/includes" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.d" -MT"Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o"
-In file included from C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 8/Lesson 3/UART_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:15:0,
-                 from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:
-c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:224:1: warning: multi-line comment [-Wcomment]
- //////USART\\\\\\
- ^
-c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:256:0: warning: "USART1_IRQ" redefined
- #define USART1_IRQ   38
- 
-c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:255:0: note: this is the location of the previous definition
- #define USART1_IRQ   37
- 
-c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:257:0: warning: "USART1_IRQ" redefined
- #define USART1_IRQ   39
- 
-c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:256:0: note: this is the location of the previous definition
- #define USART1_IRQ   38
- 
-In file included from c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32_f103c6_gpio_drivers.h:16:0,
-                 from C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 8/Lesson 3/UART_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:16,
-                 from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:
-c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:224:1: warning: multi-line comment [-Wcomment]
- //////USART\\\\\\
- ^
 In file included from C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 8/Lesson 3/UART_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_RCC_drivers.h:15:0,
                  from ../Stm32_F103C6_Drivers/RCC/Stm32_F103C6_RCC_drivers.c:11:
 c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:224:1: warning: multi-line comment [-Wcomment]
@@ -33,22 +9,12 @@ c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_
 c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:256:0: warning: "USART1_IRQ" redefined
  #define USART1_IRQ   38
  
-In file included from ../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:11:0:
-C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 8/Lesson 3/UART_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:77:1: warning: multi-line comment [-Wcomment]
- ///////////////@ref EXTI_define\\\\\\\\\\\\\\\\
- ^
 c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:255:0: note: this is the location of the previous definition
  #define USART1_IRQ   37
  
-C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 8/Lesson 3/UART_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:190:1: warning: multi-line comment [-Wcomment]
- ///////////////@ref EXTI_Trigger_define\\\\\\\\\\\\\\\\
- ^
 c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:257:0: warning: "USART1_IRQ" redefined
  #define USART1_IRQ   39
  
-C:/Users/Younis/Desktop/Embedded-diploma-orig/Unit 8/Lesson 3/UART_Driver/Stm32_F103C6_Drivers/inc/Stm32_F103C6_EXTI_drivers.h:198:1: warning: multi-line comment [-Wcomment]
- ///////////////@ref EXTI_IRQ_define\\\\\\\\\\\\\\\\
- ^
 c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:256:0: note: this is the location of the previous definition
  #define USART1_IRQ   38
  
@@ -58,22 +24,7 @@ In file included from c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesso
 c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_f103c6_drivers\inc\stm32f103x6.h:224:1: warning: multi-line comment [-Wcomment]
  //////USART\\\\\\
  ^
-../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: In function 'Update_EXTI':
-../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:15: warning: implicit declaration of function 'AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping' [-Wimplicit-function-declaration]
-  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position)
-               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:100: error: expected ']' before ')' token
-  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position)
-                                                                                                    ^
-../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:100: error: expected ';' before ')' token
-../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:100: error: expected statement before ')' token
 ../Stm32_F103C6_Drivers/RCC/Stm32_F103C6_RCC_drivers.c: In function 'MCAL_RCC_GetSYSCLKFreq':
-../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:102: error: expected expression before '<<' token
-  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position)
-                                                                                                      ^~
-../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:46:125: error: expected statement before ')' token
-  AFIO->EXTICR[AFIO_EXTI_AFIO_EXTICR_indexO_GPIO_EXTI_MApping(EXTI_Config->EXTI_Pin.GPIO_Port) & 0xF) << AFIO_EXTICR_position)
-                                                                                                                             ^
 ../Stm32_F103C6_Drivers/RCC/Stm32_F103C6_RCC_drivers.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
@@ -81,17 +32,20 @@ c:\users\younis\desktop\embedded-diploma-orig\unit 8\lesson 3\uart_driver\stm32_
 ../Stm32_F103C6_Drivers/RCC/Stm32_F103C6_RCC_drivers.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
-../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c: At top level:
-../Stm32_F103C6_Drivers/RCC/Stm32_F103C6_RCC_drivers.c: In function 'MCAL_RCC_GetPCLK2Freq':
-../Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.c:110:1: error: expected identifier or '(' before '{' token
- {
- ^
-../Stm32_F103C6_Drivers/RCC/Stm32_F103C6_RCC_drivers.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-make: *** [Stm32_F103C6_Drivers/EXTI/subdir.mk:18: Stm32_F103C6_Drivers/EXTI/Stm32_F103C6_EXTI_drivers.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j16 all" terminated with exit code 2. Build might be incomplete.
+arm-none-eabi-gcc -o "UART_Driver.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Younis\Desktop\Embedded-diploma-orig\Unit 8\Lesson 3\UART_Driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_Driver.elf
+ 
+arm-none-eabi-objdump -h -S  UART_Driver.elf  > "UART_Driver.list"
+arm-none-eabi-objcopy  -O binary  UART_Driver.elf  "UART_Driver.bin"
+arm-none-eabi-size   UART_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1100	      8	   1624	   2732	    aac	UART_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_Driver.bin
+Finished building: UART_Driver.list
+ 
+ 
 
-20:27:17 Build Failed. 8 errors, 15 warnings. (took 358ms)
+22:14:42 Build Finished. 0 errors, 6 warnings. (took 675ms)
 

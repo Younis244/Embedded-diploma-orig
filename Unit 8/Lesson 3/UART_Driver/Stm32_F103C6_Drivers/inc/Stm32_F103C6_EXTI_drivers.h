@@ -12,8 +12,8 @@
 //=============================
 //Includes
 //=============================
-#include "../../Stm32_F103C6_Drivers/inc/stm32f103x6.h"
-#include "../../Stm32_F103C6_Drivers/inc/Stm32_F103C6_gpio_drivers.h"
+#include "stm32f103x6.h"
+#include "Stm32_F103C6_gpio_drivers.h"
 
 typedef struct
 {

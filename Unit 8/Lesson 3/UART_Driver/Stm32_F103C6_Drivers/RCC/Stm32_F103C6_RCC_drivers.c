@@ -37,12 +37,14 @@ uint32_t MCAL_RCC_GetHCLKFreq(void)
 
 uint32_t MCAL_RCC_GetPCLK1Freq(void)
 {
+//	Bits 10:8 PPRE1[2:0]: APB Low-speed prescaler (APB1)
 	return (MCAL_RCC_GetHCLKFreq() >> APBPrescTable[(RCC->CFGR >> 8) & 0b111]);
 }
 
 uint32_t MCAL_RCC_GetPCLK2Freq(void)
 {
-
+//	B its 13:11 PPRE2[2:0]: APB high-speed prescaler (APB2)
+	return (MCAL_RCC_GetHCLKFreq() >> APBPrescTable[(RCC->CFGR >> 11) & 0b111]);
 }
 
 
